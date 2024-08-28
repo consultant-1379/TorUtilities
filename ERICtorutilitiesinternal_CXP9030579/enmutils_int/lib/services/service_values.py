@@ -1,0 +1,5 @@
+
+URL_PREFIX = '/api/v1'
+SERVICE_HOST_DEFAULT = "localhost"
+POST_METHOD = "POST"
+GET_METHOD = "GET"

@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ericsson.dms.torutility</groupId>
+    <artifactId>TorUtilities</artifactId>
+    <version>5.71.6-SNAPSHOT</version>
+  </parent>
+  <artifactId>ERICtorutilitiesinternal_CXP9030579</artifactId>
+  <packaging>rpm</packaging>
+  <name>[${project.parent.artifactId}] Internal CXP9030579</name>
+  <properties>
+    <!-- com.ericsson.oss.rpm.architecture>x86_64</com.ericsson.oss.rpm.architecture -->
+    <!-- Install path = /${rpm-root}/${comp-name}/${install-path} -->
+    <media.category>ms</media.category>
+    <rpm-root>opt</rpm-root>
+    <comp-name>ericsson</comp-name>
+    <install-path>enmutils</install-path>
+    <env-path>.env</env-path>
+    <publish_artifact>true</publish_artifact>
+    <python_path>${project.parent.basedir}/.env/bin/python2</python_path>
+    <py_json_html_converter_path>${basedir}/enmutils_int/lib/py_json_html_converter.py</py_json_html_converter_path>
+    <new_file_path>${project.parent.basedir}/workload_profiles_ver_${project.version}</new_file_path>
+    <path-to-configure-wlvm-script>${basedir}/enmutils_int/bin/configure_wlvm.py</path-to-configure-wlvm-script>
+    <sonar.sources>enmutils_int</sonar.sources>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+        <!-- create additional workload artifacts: json and html START-->
+          <execution>
+            <configuration>
+              <executable>${python_path}</executable>
+                <workingDirectory>${project.parent.basedir}</workingDirectory>
+                  <arguments>
+                    <argument>${py_json_html_converter_path}</argument>
+                    <argument>--json</argument>
+                    <argument>--version=${project.version}</argument>
+                    <argument>--path-to-save=${new_file_path}.json</argument>
+                  </arguments>
+              </configuration>
+              <id>create-json-file</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+            </execution>
+          <execution>
+            <configuration>
+              <executable>${python_path}</executable>
+                <workingDirectory>${project.parent.basedir}</workingDirectory>
+                  <arguments>
+                    <argument>${py_json_html_converter_path}</argument>
+                    <argument>--html</argument>
+                    <argument>--version=${project.version}</argument>
+                    <argument>--path-to-save=${new_file_path}.html</argument>
+                  </arguments>
+              </configuration>
+              <id>create-html-file</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>exec</goal>
+              </goals>
+            </execution>
+            <!-- create additional workload artifacts: json and html END-->
+          </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.7</version>
+        <executions>
+          <execution>
+            <id>parse-version</id>
+            <goals>
+              <goal>parse-version</goal>
+            </goals>
+          </execution>
+          <!-- attach artifacts: json and html START-->
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>${new_file_path}.json</file>
+                  <type>json</type>
+                </artifact>
+                <artifact>
+                  <file>${new_file_path}.html</file>
+                  <type>html</type>
+                </artifact>
+                <artifact>
+                  <file>${path-to-configure-wlvm-script}</file>
+                  <type>python</type>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
+          <!-- attach artifacts: json and html END-->
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <requires>
+            <require>ERICtorutilities_CXP9030570 &gt;= ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</require>
+          </requires>
+          <defineStatements>
+            <defineStatement>_binaries_in_noarch_packages_terminate_build 0</defineStatement>
+            <defineStatement>_python_bytecompile_errors_terminate_build 0</defineStatement>
+          </defineStatements>
+          <skip>true</skip>
+          <inherited>true</inherited>
+          <classifier>enmutils</classifier>
+          <copyright>2014 Ericsson AB All rights reserved</copyright>
+          <description>${ericsson.rstate}</description>
+          <group>ERI-NMS</group>
+          <needarch>false</needarch>
+          <autoRequires>false</autoRequires>
+          <vendor>Ericsson AB</vendor>
+          <url>www.ericsson.com</url>
+          <mappings>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/.deploy</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <dependency />
+              <sources>
+                <source>
+                  <location>../.deploy</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <dependency />
+              <sources>
+                <source>
+                  <location>../.env</location>
+                  <includes>
+                    <include>bin/update_enmutils_rpm</include>
+                    <include>lib/python2.7/site-packages/enmutils/bin/update_enmutils_rpm.py</include>
+                    <include>bin/batch_runner</include>
+                    <include>bin/workload</include>
+                    <include>bin/new_workload</include>
+                    <include>bin/network</include>
+                    <include>bin/user_mgr</include>
+                    <include>bin/consistency</include>
+                  </includes>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/bin</directory>
+              <directoryIncluded>false</directoryIncluded>
+              <sources>
+                <source>
+                  <location>../int_bin</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/rsa</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/rsa</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/rsa-4.5.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/rsa-4.5.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pip</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pip</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pip-9.0.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pip-9.0.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/waitress</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/waitress</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/waitress-1.3.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/waitress-1.3.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/typing.py</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/tabulate.py</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/ConcurrentLogHandler-0.9.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/ConcurrentLogHandler-0.9.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/concurrent</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/concurrent</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/dateutil</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/dateutil</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/python_dateutil-2.8.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/python_dateutil-2.8.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/python_dateutil-2.8.2.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/python_dateutil-2.8.2.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/tabulate-0.8.7.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/tabulate-0.8.7.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/selenium</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/selenium</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/selenium-2.45.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/selenium-2.45.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/packaging</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/packaging</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/packaging-20.4.dist-info</directory>
+              <sources>
+                <source>
+			<location>../.env/lib/python2.7/site-packages/packaging-20.4.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/json2html</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/json2html</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/Jinja2-2.10.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/Jinja2-2.10.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/flask</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/flask</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/flask_swagger_ui-3.20.9.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/flask_swagger_ui-3.20.9.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/flask_swagger_ui</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/flask_swagger_ui</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/expiringdict-1.2.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/expiringdict-1.2.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/expiringdict</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/expiringdict</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/Flask-1.0.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/Flask-1.0.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/typing-3.7.4.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/typing-3.7.4.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/Click-7.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/Click-7.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/click</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/click</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/enmutils_int</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/enmutils_int</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/EnmUtilsInt-0.0.0-py2.7.egg-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/EnmUtilsInt-0.0.0-py2.7.egg-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pexpect-4.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pexpect-4.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pexpect</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pexpect</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/ptyprocess-0.5.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/ptyprocess-0.5.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/ptyprocess</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/ptyprocess</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/jinja2</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/jinja2</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/MarkupSafe-1.1.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/MarkupSafe-1.1.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/markupsafe</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/markupsafe</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/jsonpickle-0.9.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/jsonpickle-0.9.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/jsonpickle</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/jsonpickle</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/apscheduler</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/apscheduler</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/APScheduler-3.6.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/APScheduler-3.6.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/websocket_client-0.37.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/websocket_client-0.37.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/websocket</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/websocket</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/cli2man-0.2.4.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/cli2man-0.2.4.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/json2html-1.0.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/json2html-1.0.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/google</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/google</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/google_auth-2.18.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/google_auth-2.18.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+             <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/PyYAML-5.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/PyYAML-5.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+             <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/configparser-4.0.2.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/configparser-4.0.2.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+             <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pytz</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pytz</location>
+                </source>
+              </sources>
+            </mapping>
+             <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pytz-2018.4.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pytz-2018.4.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/Werkzeug-0.15.4.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/Werkzeug-0.15.4.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/backports</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/backports</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/cachetools</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/cachetools</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/cachetools-3.1.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/cachetools-3.1.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/certifi</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/certifi</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/certifi-2021.10.8.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/certifi-2021.10.8.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/funcsigs</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/funcsigs</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/funcsigs-0.4.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/funcsigs-0.4.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/futures-3.3.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/futures-3.3.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/itsdangerous</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/itsdangerous</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/itsdangerous-1.1.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/itsdangerous-1.1.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/kubernetes</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/kubernetes</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/kubernetes-18.20.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/kubernetes-18.20.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/oauthlib</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/oauthlib</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/oauthlib-3.1.0.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/oauthlib-3.1.0.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/pyparsing-2.4.7.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/pyparsing-2.4.7.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/tzlocal</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/tzlocal</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/tzlocal-2.1.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/tzlocal-2.1.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/urllib3</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/urllib3</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/retrying-1.3.3.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/retrying-1.3.3.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/retrying.py</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/urllib3-1.26.18.dist-info</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/urllib3-1.26.18.dist-info</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/werkzeug</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/werkzeug</location>
+                </source>
+              </sources>
+            </mapping>
+	        <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/yaml</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/yaml</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages</directory>
+              <sources>
+                <source>
+                  <location>../.env/lib/python2.7/site-packages/configparser.py</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}/lib/python2.7/site-packages/enmutils_int/etc/batch</directory>
+              <sources>
+                <source>
+                  <location>../torutilities_testslib/testslib/batch</location>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
+          <preinstallScriptlet>
+            <script>
+              echo "Performing preinstall actions (internal)"
+
+              LITP_BIN="/usr/bin/litp"
+              if [[ -f ${LITP_BIN} &amp;&amp; $(hostname) -ne "cloud-ms-1" ]]
+              then
+                echo "Installation of ERICtorutilitiesinternal_CXP9030579 rpm on LMS has been detected"
+                echo "This is not allowed as it can prevent successful ENM upgrades - use Workload VM instead"
+                exit 1
+              fi
+
+              [ ! -d /home/enmutils ] &amp;&amp; mkdir -p /home/enmutils
+              touch /home/enmutils/.install_running
+              echo "Preinstall actions complete (internal)"
+            </script>
+          </preinstallScriptlet>
+          <postinstallScriptlet>
+            <script>
+              echo "Performing postinstall actions (internal)"
+
+              if ! [ -d /opt/ericsson/enmutils/etc/int ] ; then
+                mkdir -p /opt/ericsson/enmutils/etc/int;
+                ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/etc/properties.conf;
+                ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/schedules/schedule_template.py /opt/ericsson/enmutils/etc/schedule_template.py;
+                ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/schedules/full_schedule.py /opt/ericsson/enmutils/etc/full_schedule.py;
+                ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/etc/load /opt/ericsson/enmutils/etc/int/;
+                mkdir /home/enmutils/config/
+                ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/etc/data/stkpi_config.py /home/enmutils/config/stkpi_config.py;
+              fi;
+              if ! [ -d /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/test_client/ ] ; then
+                mkdir -p /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/test_client/;
+              fi;
+              rm -rf /opt/ericsson/enmutils/workload /etc/cron.d/workload_status;
+              mkdir -p /opt/ericsson/enmutils/workload;
+              find /opt/ericsson/enmutils/workload -xtype l -delete;
+              ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/workload/* /opt/ericsson/enmutils/workload;
+              rm -f /opt/ericsson/enmutils/workload/__init__.py;
+              rm -rf /opt/ericsson/enmutils/nrm_default_configurations;
+              mkdir -p /opt/ericsson/enmutils/nrm_default_configurations;
+              ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/nrm_default_configurations/* /opt/ericsson/enmutils/nrm_default_configurations;rm -f /opt/ericsson/enmutils/nrm_default_configurations/__init__.py;
+              rm -rf /opt/ericsson/enmutils/schedules;
+              mkdir -p /opt/ericsson/enmutils/schedules;
+              ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/schedules/* /opt/ericsson/enmutils/schedules;rm -f /opt/ericsson/enmutils/schedules/__init__.py;
+
+              echo "Updating yum config"
+              [[ "$(hostname)" != "cloud-ms-1" ]] &amp;&amp; sed -i '/proxy=/d' /etc/yum.conf &amp;&amp; echo "proxy=http://atproxy1.athtem.eei.ericsson.se:3128/" &gt;&gt; /etc/yum.conf
+
+              echo "Removing HTTP proxy entries."
+              for proxy in "http_proxy https_proxy"
+              do
+                 unset $proxy
+                 sed -i "/$proxy=/d" /root/.bashrc /etc/profile
+              done
+
+              echo "Creating WL services init.d scripts"
+              SERVICE_CONTROLLER="/opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/wl_service_controller.sh"
+              SERVICE_TYPES="user node profile deploymentinfo"
+              for TYPE in ${SERVICE_TYPES}
+              do
+                SERVICE="${TYPE}manager"
+                INIT_SCRIPT="/etc/init.d/${SERVICE}"
+                echo '#!/bin/bash'
+                echo "# chkconfig: 345 96 04" &gt; ${INIT_SCRIPT}
+                echo "exec ${SERVICE_CONTROLLER} ${SERVICE}" '${@}' &gt;&gt; ${INIT_SCRIPT}
+                chmod 755 ${INIT_SCRIPT}
+                /sbin/chkconfig --add ${SERVICE}
+                /sbin/chkconfig --list ${SERVICE} 2&gt; /dev/null
+              done
+
+              echo "Starting WL services"
+              mkdir -p /home/enmutils/services /home/enmutils/cmimport /opt/ericsson/enmutils/bin/services
+              chcon -Rt var_log_t /home/enmutils/services
+              touch /home/enmutils/.wl_service_enable
+
+              for TYPE in ${SERVICE_TYPES}
+              do
+                SERVICE="${TYPE}manager"
+                SERVICE_LINK="/opt/ericsson/enmutils/bin/services/${SERVICE}"
+                [[ ! -f ${SERVICE_LINK} ]] &amp;&amp; ln -s /opt/ericsson/enmutils/bin/wl_service ${SERVICE_LINK}
+                pkill -f "wl_service ${SERVICE}" &gt; /dev/null
+                service ${SERVICE} restart
+              done
+
+              echo "Adding service auto restart cron entry."
+              AUTORESTART_SERVICES_CRON_FILE="/etc/cron.d/torutilities_autorestart_services"
+              rm -f $AUTORESTART_SERVICES_CRON_FILE /etc/cron.d/*utilities*service*
+
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh rsyslog &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ddc &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh deploymentinfomanager &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh usermanager &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh profilemanager &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "*/10 * * * * root [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh ] &amp;&amp; /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/external_sources/scripts/service_restart.sh nodemanager &gt; /dev/null 2&gt;&amp;1" &gt;&gt; $AUTORESTART_SERVICES_CRON_FILE
+              echo "Removing cron entries related to DDC plugin for workload"
+              [ -f /var/spool/cron/root ] &amp;&amp; sed -i '/plugin_data\/workload/d' /var/spool/cron/root;
+
+              echo "Removing old CXP packages that are no longer required"
+              rm -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/etc/data/*CXP*.zip
+
+              echo "Adding Redis DB monitor cron entry"
+              echo "0 */6 * * * root [ -f /opt/ericsson/enmutils/bin/utilities ] &amp;&amp; /opt/ericsson/enmutils/bin/utilities monitor_redis" &gt; /etc/cron.d/utilities_monitor_redis
+
+              /opt/ericsson/enmutils/bin/utilities remove_workload_admin_session_key
+
+              echo "Updating history command with options"
+              /opt/ericsson/enmutils/bin/utilities improve_command_history_logs
+
+              echo "Reconfiguring DDC plugin for workload"
+              /opt/ericsson/enmutils/bin/configure_wlvm ENM --setup_ddc_collection_of_workload_files &gt; /dev/null
+
+              DEPENDENT_SERVICES="ddc crond rsyslog"
+              echo "Checking dependent services: $DEPENDENT_SERVICES"
+              for SERVICE in $DEPENDENT_SERVICES
+              do
+                /sbin/service $SERVICE status &gt; /dev/null
+                [[ $? -ne 0 ]] &amp;&amp; { echo "Starting service: $SERVICE"; /sbin/service $SERVICE start &gt; /dev/null; }
+              done
+
+              echo "Updating kubectl local client version (cENM only)"
+              /opt/ericsson/enmutils/bin/configure_wlvm ENM --update_local_kubectl_version &gt; /dev/null
+
+              echo "Updating package revision history files"
+              echo "ERICtorutilitiesinternal_CXP9030579 %{version}" &gt; /etc/torutils-version;
+              echo "ERICtorutilitiesinternal_CXP9030579 %{version} Install date: $(date)" &gt;&gt; /etc/torutils-history;
+
+              echo "Updating tool entry points."
+              if [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/tool_entry_point_updater.py ] ; then
+                /opt/ericsson/enmutils/.env/bin/python2.7 /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/tool_entry_point_updater.py
+              fi;
+              if [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/workload_admin_session_removal.py ] ; then
+                /opt/ericsson/enmutils/.env/bin/python2.7 /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils_int/lib/workload_admin_session_removal.py
+              fi;
+              echo "Completed updating tool entry points."
+
+              echo "Checking ALL_PROFILES key from persistence"
+              /opt/ericsson/enmutils/bin/persistence get 'ALL_PROFILES' &gt; /dev/null
+              if [ $? -eq 0 ]; then
+                  echo "Removing ALL_PROFILES key from persistence"
+                  /opt/ericsson/enmutils/bin/persistence remove 'ALL_PROFILES' &gt; /dev/null
+              fi
+
+              echo "Checking for completed profiles via workload status"
+              for PROFILE in $(/opt/ericsson/enmutils/bin/workload status | egrep '_.*COMPLETED' | awk '{print $1}' )
+              do
+                if [ ! -z $(pgrep -f "daemon $PROFILE") ]
+                then
+                  echo "Killing daemon process for COMPLETED profile $PROFILE and removing corresponding pid file"
+                  pkill -f "daemon $PROFILE"
+                  if [ $? -eq 0 ]; then rm -rf /var/tmp/enmutils/daemon/$PROFILE.pid; fi
+                fi
+              done
+              rm -f /home/enmutils/.install_running
+              sed -i '/export PATH=\/opt\/ericsson\/enmutils\/bin:\$PATH/d' /etc/profile
+              echo 'export PATH=/opt/ericsson/enmutils/bin:$PATH' &gt;&gt; /etc/profile
+              /opt/ericsson/enmutils/.env/bin/pip uninstall -y google-auth==2.18.1
+              /opt/ericsson/enmutils/.env/bin/pip install google-auth==2.18.1
+              echo "Postinstall actions complete (internal)"
+
+
+            </script>
+          </postinstallScriptlet>
+          <postremoveScriptlet>
+            <script>
+              if [ "$1" = 0 ]; then
+                echo "Performing postremove actions (internal)"
+                if [ ! -d /opt/ericsson/nssutils ]; then
+                  rm -Rf /opt/ericsson/enmutils/etc/int
+                fi;
+                rm -Rf /opt/ericsson/enmutils/workload /opt/ericsson/enmutils/nrm_default_configurations /opt/ericsson/enmutils/schedules /etc/cron.d/workload_status;
+
+                echo "Removing Redis DB monitor cron entry"
+                rm -f /etc/cron.d/utilities_monitor_redis
+
+                echo "Checking administrator_session in Redis DB"
+                /opt/ericsson/enmutils/bin/persistence get administrator_session &gt; /dev/null
+
+                if [ $? -eq 0 ]; then
+                    echo "Removing administrator_session from Redis DB"
+                    /opt/ericsson/enmutils/bin/persistence remove administrator_session &gt; /dev/null
+                fi
+                if [ -d /opt/ericsson/enmutils ]; then
+                  echo "Performing cleanup of old python files (postremove)"
+                  find /opt/ericsson/enmutils -name \*.py[co] -delete;
+                fi;
+
+                echo "Removing services artifacts"
+                rm -rf /opt/ericsson/enmutils/bin/services;
+                rm -f /etc/init.d/*manager;
+                sed -i '/export PATH=\/opt\/ericsson\/enmutils\/bin:\$PATH/d' /etc/profile
+                echo "Postremove actions complete (internal)"
+              fi;
+
+            </script>
+          </postremoveScriptlet>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <appendAssemblyId>false</appendAssemblyId>
+          <descriptors>
+            <descriptor>${project.basedir}/assembly/int_package.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <!-- this is used for inheritance merges -->
+            <phase>package</phase>
+            <!-- bind to the packaging phase -->
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

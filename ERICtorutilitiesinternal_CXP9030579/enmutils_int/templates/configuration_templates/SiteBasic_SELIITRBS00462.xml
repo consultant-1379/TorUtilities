@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:com:ericsson:ebase:0.1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Set License Manager Fingerprint" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <Lm xmlns="urn:com:ericsson:ecim:RcsLM">
+            <lmId>1</lmId>
+            <fingerprint>%SB_fingerprint%</fingerprint>
+          </Lm>
+        </SystemFunctions>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close Session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:com:ericsson:ebase:0.1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Activate Licenced Features" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <Lm xmlns="urn:com:ericsson:ecim:RcsLM">
+            <lmId>1</lmId>
+            <FeatureState>
+              <featureStateId>CXC4011823</featureStateId>
+              <featureState>ACTIVATED</featureState>
+            </FeatureState>
+            <FeatureState>
+              <featureStateId>CXC4040006</featureStateId>
+              <featureState>ACTIVATED</featureState>
+            </FeatureState>
+          </Lm>
+        </SystemFunctions>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close Session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:com:ericsson:ebase:0.1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Configure Routers" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <Equipment>
+          <equipmentId>1</equipmentId>
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>1</fieldReplaceableUnitId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <TnPort>
+              <tnPortId>TN_A</tnPortId>
+            </TnPort>
+            <TnPort>
+              <tnPortId>TN_B</tnPortId>
+            </TnPort>
+            <TnPort>
+              <tnPortId>TN_C</tnPortId>
+            </TnPort>
+			<SyncPort>
+              <syncPortId>1</syncPortId>
+            </SyncPort>
+          </FieldReplaceableUnit>
+        </Equipment>
+        <Transport>
+          <transportId>1</transportId>
+          <EthernetPort xmlns="urn:com:ericsson:ecim:RtnL2EthernetPort">
+            <ethernetPortId>TN_C</ethernetPortId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <admOperatingMode>1G_FULL</admOperatingMode>
+            <autoNegEnable>true</autoNegEnable>
+            <encapsulation>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,TnPort=TN_C</encapsulation>
+          </EthernetPort>
+          <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
+            <vlanPortId>TN_C_1580</vlanPortId>
+            <encapsulation>ManagedElement=1,Transport=1,EthernetPort=TN_C</encapsulation>
+            <vlanId>1580</vlanId>
+          </VlanPort>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>OAM</routerId>
+            <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3Router">
+              <interfaceIPv4Id>1</interfaceIPv4Id>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=TN_C_1581</encapsulation>
+              <AddressIPv4 xmlns="urn:com:ericsson:ecim:RtnL3AddressIPv4">
+                <addressIPv4Id>1</addressIPv4Id>
+                <address>10.90.36.42/29</address>
+              </AddressIPv4>
+            </InterfaceIPv4>
+            <RouteTableIPv4Static xmlns="urn:com:ericsson:ecim:RtnRoutesStaticRouteIPv4">
+              <routeTableIPv4StaticId>1</routeTableIPv4StaticId>
+              <Dst>
+                <dstId>Default</dstId>
+                <dst>0.0.0.0/0</dst>
+                <NextHop>
+                  <nextHopId>1</nextHopId>
+                  <address>10.90.36.41</address>
+                </NextHop>
+              </Dst>
+            </RouteTableIPv4Static>
+            <DnsClient>
+              <dnsClientId>1</dnsClientId>
+              <serverAddress>10.74.38.134</serverAddress> <!-- OSS INFRA IP / ENM ?? IP -->
+            </DnsClient>
+          </Router>
+          <VlanPort xmlns="urn:com:ericsson:ecim:RtnL2VlanPort">
+            <vlanPortId>TN_C_1581</vlanPortId>
+            <encapsulation>ManagedElement=1,Transport=1,EthernetPort=TN_C</encapsulation>
+            <vlanId>1581</vlanId>
+          </VlanPort>
+          <Router xmlns="urn:com:ericsson:ecim:RtnL3Router">
+            <routerId>TRAFFIC</routerId>
+            <InterfaceIPv4 xmlns="urn:com:ericsson:ecim:RtnL3InterfaceIPv4">
+              <interfaceIPv4Id>1</interfaceIPv4Id>
+              <encapsulation>ManagedElement=1,Transport=1,VlanPort=TN_C_1580</encapsulation>
+              <AddressIPv4 xmlns="urn:com:ericsson:ecim:RtnL3AddressIPv4">
+                <addressIPv4Id>1</addressIPv4Id>
+                <address>10.90.36.34/29</address>
+              </AddressIPv4>
+            </InterfaceIPv4>
+            <RouteTableIPv4Static xmlns="urn:com:ericsson:ecim:RtnRoutesStaticRouteIPv4">
+              <routeTableIPv4StaticId>1</routeTableIPv4StaticId>
+              <Dst>
+                <dstId>Default</dstId>
+                <dst>0.0.0.0/0</dst>
+                <NextHop>
+                  <nextHopId>1</nextHopId>
+                  <address>10.90.36.33</address>
+                </NextHop>
+              </Dst>
+            </RouteTableIPv4Static>
+            <DnsClient>
+              <dnsClientId>1</dnsClientId>
+              <serverAddress>10.74.38.134</serverAddress>
+            </DnsClient>
+          </Router>
+        </Transport>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close Session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:com:ericsson:ebase:0.1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Configure OAM Access Point and set networkManagedElementId of the ME" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+		        <networkManagedElementId>SELIITRBS00462</networkManagedElementId>
+        <SystemFunctions>
+          <systemFunctionsId>1</systemFunctionsId>
+          <SysM xmlns="urn:com:ericsson:ecim:ComSysM">
+            <sysMId>1</sysMId>
+            <OamAccessPoint xmlns="urn:com:ericsson:ecim:RcsOamAccessPoint">
+              <oamAccessPointId>1</oamAccessPointId>
+			  <accessPoint>ManagedElement=1,Transport=1,Router=OAM,InterfaceIPv4=1,AddressIPv4=1</accessPoint>
+            </OamAccessPoint>
+            
+			 			<NtpServer>
+			   				<ntpServerId>1</ntpServerId>
+			   				<serverAddress>10.76.176.15</serverAddress>
+			   				<administrativeState>UNLOCKED</administrativeState>
+			 			</NtpServer>
+            
+          </SysM>
+
+		      <SecM xmlns="urn:com:ericsson:ecim:ComSecM">
+			 			<secMId>1</secMId>
+			 			<UserManagement>
+			   				<userManagementId>1</userManagementId>
+			   				<UserIdentity xmlns="urn:com:ericsson:ecim:RcsUser">
+	              				<userIdentityId>1</userIdentityId>
+	              				<MaintenanceUser>
+	                				<maintenanceUserId>1</maintenanceUserId>
+	                				<userName>labuser</userName>
+	                				<password>
+	                 					<cleartext></cleartext>
+	                 					<password>Letmein01</password>
+	                				</password>
+	              				</MaintenanceUser>
+							<!--subjectName>CN=Maintuser</subjectName-->
+							<MaintenanceUserSecurity>
+	                			<maintenanceUserSecurityId>1</maintenanceUserSecurityId> 
+	              			</MaintenanceUserSecurity>
+	       					</UserIdentity>
+			 			</UserManagement>
+       		</SecM>
+
+        </SystemFunctions>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Close Session" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>

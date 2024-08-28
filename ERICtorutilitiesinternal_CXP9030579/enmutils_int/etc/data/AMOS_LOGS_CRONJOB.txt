@@ -1,0 +1,1 @@
+00 23 */5 * * root /opt/ericsson/amos/scripts/archive_moshell_logs.sh /ericsson/log/amos/moshell_logfiles/  --days 5 > /dev/null 2>&1

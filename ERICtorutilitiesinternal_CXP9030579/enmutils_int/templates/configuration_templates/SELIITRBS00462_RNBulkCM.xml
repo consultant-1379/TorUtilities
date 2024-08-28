@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd"
+    xmlns:gn="geranNrm.xsd" xmlns="configData.xsd" xmlns:es="EricssonSpecificAttributes.16.16.xsd">
+    <fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+    <configData dnPrefix="SubNetwork=%NodeName%">      
+            <xn:SubNetwork id="%NodeName%">              
+                <xn:ManagedElement id="%NodeName%">                   
+                    <!-- ENodeBFunction -->
+                    <xn:VsDataContainer id="1" >
+                        <xn:attributes>
+                            <xn:vsDataType>vsDataENodeBFunction</xn:vsDataType>
+                            <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.16</xn:vsDataFormatVersion>
+                            <es:vsDataENodeBFunction/>
+                        </xn:attributes>
+                        
+                        <!-- SectorCarrier -->
+                        <xn:VsDataContainer id="1" modifier="create">
+                            <xn:attributes>
+                                <xn:vsDataType>vsDataSectorCarrier</xn:vsDataType>
+                                <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.16</xn:vsDataFormatVersion>
+                                <es:vsDataSectorCarrier>										
+								    <es:noOfTxAntennas>1</es:noOfTxAntennas>
+									<es:noOfRxAntennas>1</es:noOfRxAntennas>
+									<es:sectorFunctionRef>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataNodeSupport=1,vsDataSectorEquipmentFunction=1</es:sectorFunctionRef>
+								</es:vsDataSectorCarrier>
+							</xn:attributes>
+						</xn:VsDataContainer>
+						<!-- SectorCarrier -->	
+
+						<!-- DataEUtranCellFDD -->
+						<xn:VsDataContainer id="1" modifier="create">
+                            <xn:attributes>
+                                <xn:vsDataType>vsDataEUtranCellFDD</xn:vsDataType>
+                                <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.16</xn:vsDataFormatVersion>
+                                <es:vsDataEUtranCellFDD> 
+								    <es:eUtranCellFDDId>1</es:eUtranCellFDDId> 
+								    <es:administrativeState>LOCKED</es:administrativeState>	
+									<es:earfcndl>3625</es:earfcndl> 
+									<es:earfcnul>21625</es:earfcnul>                         
+                                    <es:cellId>1</es:cellId>
+                                    <es:tac>%RN_Tac%</es:tac>
+                                    <es:physicalLayerCellIdGroup>62</es:physicalLayerCellIdGroup>
+                                    <es:physicalLayerSubCellId>0</es:physicalLayerSubCellId>															
+									<es:sectorCarrierRef>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataENodeBFunction=1,vsDataSectorCarrier=1</es:sectorCarrierRef>																
+                                </es:vsDataEUtranCellFDD> 
+                            </xn:attributes>
+						</xn:VsDataContainer>
+						<!-- DataEUtranCellFDD -->
+
+                        <!-- TermPointToMme -->
+	                    <!--xn:VsDataContainer id="1" modifier="create">
+							<xn:attributes>
+								<xn:vsDataType>vsDataTermPointToMme</xn:vsDataType>
+								<xn:vsDataFormatVersion>EricssonSpecificAttributes.16.16</xn:vsDataFormatVersion>
+								<es:vsDataTermPointToMme>
+									<es:ipv6Address1>2001:1B70:8286:7670::</es:ipv6Address1>
+									<es:ipv6Address2>2001:1B70:8286:7870::1</es:ipv6Address2>
+									<es:administrativeState>1</es:administrativeState>
+								</es:vsDataTermPointToMme>
+							</xn:attributes>
+	                    </xn:VsDataContainer-->
+						<!-- TermPointToMme -->
+						
+                    </xn:VsDataContainer>
+					<!-- ENodeBFunction -->             
+                </xn:ManagedElement>  
+        </xn:SubNetwork>
+    </configData>
+    <fileFooter dateTime="2015-07-14T15:50:00Z"/>
+</bulkCmConfigDataFile>

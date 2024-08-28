@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ericsson.dms.torutility</groupId>
+    <artifactId>TorUtilities</artifactId>
+    <version>5.71.6-SNAPSHOT</version>
+  </parent>
+  <artifactId>ERICtorutilities_CXP9030570</artifactId>
+  <packaging>rpm</packaging>
+  <name>[${project.parent.artifactId}] CXP9030570</name>
+  <properties>
+    <!--com.ericsson.oss.rpm.architecture>x86_64</com.ericsson.oss.rpm.architecture -->
+    <!-- Install path = /${rpm-root}/${comp-name}/${install-path} -->
+    <media.category>ms</media.category>
+    <rpm-root>opt</rpm-root>
+    <comp-name>ericsson</comp-name>
+    <install-path>enmutils</install-path>
+    <env-path>.env</env-path>
+    <publish_artifact>true</publish_artifact>
+    <sonar.sources>enmutils</sonar.sources>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <defineStatements>
+            <defineStatement>_binaries_in_noarch_packages_terminate_build 0</defineStatement>
+            <defineStatement>_python_bytecompile_errors_terminate_build 0</defineStatement>
+          </defineStatements>
+          <skip>true</skip>
+          <inherited>true</inherited>
+          <classifier>enmutils</classifier>
+          <copyright>2014 Ericsson AB All rights reserved</copyright>
+          <description>${ericsson.rstate}</description>
+          <group>ERI-NMS</group>
+          <needarch>false</needarch>
+          <autoRequires>false</autoRequires>
+          <vendor>Ericsson AB</vendor>
+          <url>www.ericsson.com</url>
+          <mappings>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/bin</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <dependency />
+              <sources>
+                <source>
+                  <location>../bin</location>
+                </source>
+              </sources>
+            </mapping>
+            <mapping>
+              <directory>/${rpm-root}/${comp-name}/${install-path}/${env-path}</directory>
+              <filemode>775</filemode>
+              <username>root</username>
+              <groupname>root</groupname>
+              <configuration>false</configuration>
+              <directoryIncluded>true</directoryIncluded>
+              <recurseDirectories>true</recurseDirectories>
+              <dependency />
+              <sources>
+                <source>
+                  <location>../.env</location>
+                  <excludes>
+                    <exclude>lib/python2.7/site-packages/EnmUtilsInt-0.0.0-py2.7.egg-info/**</exclude>
+                    <exclude>lib/python2.7/site-packages/enmutils_int/**</exclude>
+                    <exclude>lib/python2.7/site-packages/ConcurrentLogHandler-0.9.1.dist-info/**</exclude>
+                    <exclude>lib/python2.7/site-packages/concurrent/**</exclude>
+                    <exclude>lib/python2.7/site-packages/dateutil/**</exclude>
+                    <exclude>lib/python2.7/site-packages/python_dateutil-2.8.0.dist-info/**</exclude>
+                    <exclude>lib/python2.7/site-packages/python_dateutil-2.8.2.dist-info/**</exclude>
+                    <exclude>lib/python2.7/site-packages/ptyprocess*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/pexpect*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/jinja2*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/Jinja2*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/markupsafe*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/MarkupSafe*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/jsonpickle*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/tabulate*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/tabulate.py</exclude>
+                    <exclude>lib/python2.7/site-packages/websocket*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/mimerender*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/pip*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/python_mimeparse*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/json2html*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/cli2man*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/apscheduler*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/APScheduler*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/Click*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/click*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/expiringdict*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/flask-swagger-ui*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/flask*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/Flask*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/jsonpickle*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/packaging*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/selenium*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/typing*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/waitress*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/rsa*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/rsa-4.5.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/google_auth-2.18.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/PyYAML-5.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/configparser-4.0.2.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/pytz*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/pytz-2018.4.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/configparser.py*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/Werkzeug-0.15.4.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/backports*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/backports.ssl_match_hostname-3.5.0.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/cachetools*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/cachetools-3.1.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/certifi*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/certifi-2021.10.8.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/funcsigs*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/funcsigs-0.4.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/futures-3.3.0.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/google*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/itsdangerous*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/itsdangerous-1.1.0.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/kubernetes*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/kubernetes-18.20.0.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/oauthlib*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/oauthlib-3.1.0.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/pyparsing-2.4.7.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/tzlocal*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/tzlocal-2.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/urllib3*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/urllib3-1.26.18.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/werkzeug*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/yaml*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/fakeredis-1.1.1.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/sortedcontainers*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/fakeredis*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/sortedcontainers-2.4.0.dist-info*/**</exclude>
+                    <exclude>lib/python2.7/site-packages/retrying-1.3.3.dist-info*/**</exclude>
+                    <exclude>bin/update_enmutils_rpm</exclude>
+                    <exclude>bin/batch_runner</exclude>
+                    <exclude>bin/workload</exclude>
+                    <exclude>bin/new_workload</exclude>
+                    <exclude>bin/netsim</exclude>
+                    <exclude>bin/network</exclude>
+                    <exclude>bin/user_mgr</exclude>
+                    <exclude>bin/consistency</exclude>
+                  </excludes>
+                </source>
+              </sources>
+            </mapping>
+          </mappings>
+          <installScriptlet>
+            <script>find $RPM_BUILD_ROOT/opt/ericsson/enmutils -name \*.py[co] -delete</script>
+            <script>find $RPM_BUILD_ROOT/opt/ericsson/enmutils/.env/ -type f -perm /u+x,g+x -exec /usr/sbin/prelink -uf {} \;</script>
+          </installScriptlet>
+          <preinstallScriptlet>
+            <script>
+              if [ -d /opt/ericsson/enmutils ]; then
+                echo "Performing cleanup of old artefacts (preinstall)"
+                find /opt/ericsson/enmutils -name \*.py[co] -delete;
+              fi
+
+            </script>
+          </preinstallScriptlet>
+          <postinstallScriptlet>
+            <script>
+              echo "Performing postinstall actions (production)"
+              if ! [ -d /opt/ericsson/enmutils/etc ]; then
+                mkdir /opt/ericsson/enmutils/etc;
+                find /opt/ericsson/enmutils/etc -xtype l -delete;
+                /bin/ln -sf /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/etc/properties.conf /opt/ericsson/enmutils/etc;
+              fi
+
+              echo "Updating tool entry points."
+              if [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/tool_entry_point_updater.py ] ; then
+                /opt/ericsson/enmutils/.env/bin/python2.7 /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/lib/tool_entry_point_updater.py
+              fi;
+              echo "Completed updating tool entry points."
+               if [ -f /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/etc/enmutils_logrotate.conf ] ; then
+                cp /opt/ericsson/enmutils/.env/lib/python2.7/site-packages/enmutils/etc/enmutils_logrotate.conf /etc/logrotate.d
+                chmod 644 /etc/logrotate.d/enmutils_logrotate.conf
+              fi;
+              echo "Removing cron entries related to logrotate for EnmUtils"
+              [ -f /var/spool/cron/root ] &amp;&amp; sed -i '/enmutils_logrotate.conf/d' /var/spool/cron/root;
+              echo "Adding EnmUtils LogRotate cron entry"
+              echo "*/6 * * * * root /usr/sbin/logrotate /etc/logrotate.d/enmutils_logrotate.conf" &gt; /etc/cron.d/enmutilities_logrotate
+              echo "Checking administrator_session"
+              if [ "$(rpm -qa | egrep torutilitiesinternal)" != "" ]; then
+                echo "Checking if key exists in Redis DB"
+                /opt/ericsson/enmutils/bin/persistence get administrator_session  &gt; /dev/null;
+                if [ $? -eq 0 ]; then
+                  echo "Removing administrator_session from Redis DB"
+                  /opt/ericsson/enmutils/bin/persistence remove administrator_session  &gt; /dev/null;
+                fi
+              fi
+              echo "Postinstall actions complete (production)"
+
+            </script>
+            <fileEncoding>utf-8</fileEncoding>
+          </postinstallScriptlet>
+          <postremoveScriptlet>
+            <script>
+              if [ "$1" = 0 ]; then
+                echo "Performing cleanup of old artefacts (postremove)"
+                rm -rf /opt/ericsson/enmutils/.env /opt/ericsson/enmutils/etc;
+              fi;
+              if [ -d /opt/ericsson/enmutils ]; then
+                echo "Performing cleanup of old python files (postremove)"
+                find /opt/ericsson/enmutils -name \*.py[co] -delete;
+              fi;
+
+            </script>
+          </postremoveScriptlet>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <useReleaseProfile>false</useReleaseProfile>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

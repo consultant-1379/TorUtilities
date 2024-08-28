@@ -1,0 +1,7 @@
+[run]
+omit =
+    *test.py
+    *fabfile.py
+    *deprecated*
+
+    # Files that are covered by Acceptance Tests

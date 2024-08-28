@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nodeInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NodeInfo.xsd">
+
+    <name>{{ node_id }}</name>
+    <nodeIdentifier>{{ model_identity }}</nodeIdentifier>
+    <ipAddress>{{ node_ip }}</ipAddress>
+    <nodeType>{{ primary_type }}</nodeType>
+    <ossPrefix>SubNetwork={{ subnetwork }}</ossPrefix>
+    <timeZone>GB-Eire</timeZone>
+
+    <!-- The AutoIntegration is optional-->
+    <autoIntegration>
+        <upgradePackageName>RadioNode CXP9024418/15 R69C29 23.Q1</upgradePackageName>
+    </autoIntegration>
+
+    <license>
+        <installLicense>false</installLicense>
+    </license>
+    <hardwareSerialNumber>{{ serial }}</hardwareSerialNumber>
+    <security>
+        <ipSecurity>
+            <ipSecLevel>OAM</ipSecLevel>
+                <subjectAltNameType>IPV4</subjectAltNameType>
+            <subjectAltName>1.2.3.4</subjectAltName>
+        </ipSecurity>
+    </security>
+
+    <users>
+        <secureUser>
+            <name>{{ user }}</name>
+            <password>{{ passwd }}</password>
+        </secureUser>
+    </users>
+
+    <supervision>
+        <managementState>AUTOMATIC</managementState>
+        <fm>enabled</fm>
+        <pm>enabled</pm>
+    </supervision>
+
+    <location>
+        <latitude>53.42911</latitude>
+        <longitude>-7.94398</longitude>
+    </location>
+
+    <artifacts>
+        <siteBasic>siteBasic.xml</siteBasic>
+        <siteInstallation>siteInstallation.xml</siteInstallation>
+        <siteEquipment>siteEquipment.xml</siteEquipment>
+        <!-- Configurations are applied in order defined in xml -->
+        <configurations>
+            <nodeConfiguration>Bulk-CM-Configuration-file.xml</nodeConfiguration>
+            <optionalFeature>Optional-feature-file.xml</optionalFeature>
+            <unlockCell>Unlock-cells-file.xml</unlockCell>
+        </configurations>
+    </artifacts>
+
+</nodeInfo>

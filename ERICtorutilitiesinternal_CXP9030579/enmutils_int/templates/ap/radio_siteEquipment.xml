@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This xml is automatically generated from High Level language. Based on transform version 3.0-->
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+   <capabilities>
+      <capability>urn:ietf:params:netconf:base:1.0</capability>
+      <capability>urn:com:ericsson:ebase:1.1.0</capability>
+   </capabilities>
+</hello>
+]]>]]>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"
+     message-id="Configure FieldReplaceableUnit for BB, BB_R, Radio Units and Cabinets">
+   <edit-config>
+      <config>
+         <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+            <managedElementId>1</managedElementId>
+            <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+               <equipmentId>1</equipmentId>
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>BB-1</fieldReplaceableUnitId>
+                  <administrativeState>LOCKED</administrativeState>
+                  <RiPort>
+                     <riPortId>A</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>B</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>C</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+            </Equipment>
+            <NodeSupport xmlns="urn:com:ericsson:ecim:ReqNodeSupport">
+               <nodeSupportId>1</nodeSupportId>
+               <MpClusterHandling>
+                  <mpClusterHandlingId>1</mpClusterHandlingId>
+                  <primaryCoreRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</primaryCoreRef>
+               </MpClusterHandling>
+            </NodeSupport>
+
+            <!-- Cabinet=1, Type=RBS6601-->
+            <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+               <equipmentId>1</equipmentId>
+               <EcBus xmlns="urn:com:ericsson:ecim:ReqEcBus">
+                  <ecBusId>1</ecBusId>
+                  <ecBusConnectorRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1</ecBusConnectorRef>
+               </EcBus>
+               <Cabinet xmlns="urn:com:ericsson:ecim:ReqCabinet">
+                  <cabinetId>1</cabinetId>
+                  <userLabel>RBS6601</userLabel>
+               </Cabinet>
+            </Equipment>
+
+            <EquipmentSupportFunction xmlns="urn:com:ericsson:ecim:ReqEquipmentSupportFunction">
+               <equipmentSupportFunctionId>1</equipmentSupportFunctionId>
+               <supportSystemControl>true</supportSystemControl>
+            </EquipmentSupportFunction>
+            <!--EquipmentSupportFunction xmlns="urn:com:ericsson:ecim:ReqEquipmentSupportFunction">
+               <equipmentSupportFunctionId>2</equipmentSupportFunctionId>
+               <supportSystemControl>false</supportSystemControl>
+               <Climate xmlns="urn:com:ericsson:ecim:ReqClimate">
+                  <climateId>1</climateId>
+                  <controlDomainRef>ManagedElement=1,Equipment=1,Cabinet=1</controlDomainRef>
+                  <climateControlMode>NORMAL</climateControlMode>
+               </Climate>
+            </EquipmentSupportFunction-->
+            <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+               <equipmentId>1</equipmentId>
+
+               <!--This section create Radio units for sector1 with RBB=RBB22_1A-->
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S1-1</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S1-2</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!-- For warning you can include this Port -->
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S1-1</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-1,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-2,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S1-2</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-2,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-1,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+
+               <!--This section create Radio units for sector2 with RBB=RBB22_1A-->
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S2-1</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!-- For warning you can include this Port -->
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S2-2</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!-- For warning you can include this Port -->
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S2-1</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-1,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-2,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S2-2</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-2,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-1,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+
+               <!--This section create Radio units for sector3 with RBB=RBB22_1A-->
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S3-1</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!-- For warning you can include this Port -->
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <FieldReplaceableUnit xmlns="urn:com:ericsson:ecim:ReqFieldReplaceableUnit">
+                  <fieldReplaceableUnitId>Radio-S3-2</fieldReplaceableUnitId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <!--isSharedWithExternalMe>false</isSharedWithExternalMe-->
+                  <RfPort>
+                     <rfPortId>A</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXB_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <RfPort>
+                     <rfPortId>RXA_IO</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                  </RfPort>
+                  <!-- For warning you can include this Port -->
+                  <!--RfPort>
+                     <rfPortId>B</rfPortId>
+                     <administrativeState>UNLOCKED</administrativeState>
+                     <vswrSupervisionActive>false</vswrSupervisionActive>
+                     <vswrSupervisionSensitivity>-1</vswrSupervisionSensitivity>
+                  </RfPort-->
+                  <RiPort>
+                     <riPortId>DATA_1</riPortId>
+                  </RiPort>
+                  <RiPort>
+                     <riPortId>DATA_2</riPortId>
+                  </RiPort>
+               </FieldReplaceableUnit>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S3-1</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-1,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-2,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+               <CcLink xmlns="urn:com:ericsson:ecim:ReqCcLink">
+                  <ccLinkId>S3-2</ccLinkId>
+                  <rxOutRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-2,RfPort=RXA_IO</rxOutRfPortRef>
+                  <rxInRfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-1,RfPort=RXB_IO</rxInRfPortRef>
+               </CcLink>
+            </Equipment>
+         </ManagedElement>
+      </config>
+   </edit-config>
+</rpc>
+]]>]]>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"
+     message-id="Configure Antenna Unit Group with child MO's for all sectors">
+   <edit-config>
+      <target>
+         <running/>
+      </target>
+      <config>
+         <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+            <managedElementId>1</managedElementId>
+            <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+               <equipmentId>1</equipmentId>
+               <!-- Create AntennaUnitGroup and RfBranches for Sector=1 with RBB=RBB22_1A and ABB=ABB2_1A-->
+               <AntennaUnitGroup xmlns="urn:com:ericsson:ecim:ReqAntennaSystem">
+                  <antennaUnitGroupId>1</antennaUnitGroupId>
+                  <AntennaUnit>
+                     <antennaUnitId>1</antennaUnitId>
+                     <AntennaSubunit>
+                        <antennaSubunitId>S1-1</antennaSubunitId>
+                        <AuPort>
+                           <auPortId>1</auPortId>
+                        </AuPort>
+                        <AuPort>
+                           <auPortId>2</auPortId>
+                        </AuPort>
+                     </AntennaSubunit>
+                  </AntennaUnit>
+                  <RfBranch>
+                     <rfBranchId>S1-1</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S1-1,AuPort=1</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-1,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <RfBranch>
+                     <rfBranchId>S1-2</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S1-1,AuPort=2</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-2,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <CcBranch>
+                     <ccBranchId>S1-1</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S1-1</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S1-1</ccLinkRef>
+                  </CcBranch>
+                  <CcBranch>
+                     <ccBranchId>S1-2</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S1-2</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S1-1</ccLinkRef>
+                  </CcBranch>
+               </AntennaUnitGroup>
+               <!-- Create AntennaUnitGroup and RfBranches for Sector=2 with RBB=RBB22_1A and ABB=ABB2_1A-->
+               <AntennaUnitGroup xmlns="urn:com:ericsson:ecim:ReqAntennaSystem">
+                  <antennaUnitGroupId>1</antennaUnitGroupId>
+                  <AntennaUnit>
+                     <antennaUnitId>1</antennaUnitId>
+                     <AntennaSubunit>
+                        <antennaSubunitId>S2-1</antennaSubunitId>
+                        <AuPort>
+                           <auPortId>1</auPortId>
+                        </AuPort>
+                        <AuPort>
+                           <auPortId>2</auPortId>
+                        </AuPort>
+                     </AntennaSubunit>
+                  </AntennaUnit>
+                  <RfBranch>
+                     <rfBranchId>S2-1</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S2-1,AuPort=1</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-1,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <RfBranch>
+                     <rfBranchId>S2-2</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S2-1,AuPort=2</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-2,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <CcBranch>
+                     <ccBranchId>S2-1</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S2-1</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S2-1</ccLinkRef>
+                  </CcBranch>
+                  <CcBranch>
+                     <ccBranchId>S2-2</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S2-2</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S2-1</ccLinkRef>
+                  </CcBranch>
+               </AntennaUnitGroup>
+               <!-- Create AntennaUnitGroup and RfBranches for Sector=3 with RBB=RBB22_1A and ABB=ABB2_1A-->
+               <AntennaUnitGroup xmlns="urn:com:ericsson:ecim:ReqAntennaSystem">
+                  <antennaUnitGroupId>1</antennaUnitGroupId>
+                  <AntennaUnit>
+                     <antennaUnitId>1</antennaUnitId>
+                     <AntennaSubunit>
+                        <antennaSubunitId>S3-1</antennaSubunitId>
+                        <AuPort>
+                           <auPortId>1</auPortId>
+                        </AuPort>
+                        <AuPort>
+                           <auPortId>2</auPortId>
+                        </AuPort>
+                     </AntennaSubunit>
+                  </AntennaUnit>
+                  <RfBranch>
+                     <rfBranchId>S3-1</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S3-1,AuPort=1</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-1,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <RfBranch>
+                     <rfBranchId>S3-2</rfBranchId>
+                     <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=S3-1,AuPort=2</auPortRef>
+                     <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-2,RfPort=A</rfPortRef>
+                     <dlAttenuationPerFqRange>-1</dlAttenuationPerFqRange>
+                     <ulAttenuationPerFqRange>-1</ulAttenuationPerFqRange>
+                     <dlTrafficDelayPerFqRange>-1</dlTrafficDelayPerFqRange>
+                     <ulTrafficDelayPerFqRange>-1</ulTrafficDelayPerFqRange>
+                  </RfBranch>
+                  <CcBranch>
+                     <ccBranchId>S3-1</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S3-1</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S3-1</ccLinkRef>
+                  </CcBranch>
+                  <CcBranch>
+                     <ccBranchId>S3-2</ccBranchId>
+                     <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S3-2</rfBranchRef>
+                     <ccLinkRef>ManagedElement=1,Equipment=1,CcLink=S3-1</ccLinkRef>
+                  </CcBranch>
+               </AntennaUnitGroup>
+            </Equipment>
+         </ManagedElement>
+      </config>
+   </edit-config>
+</rpc>
+]]>]]>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"
+     message-id="Configure Radio links for all sectors">
+   <edit-config>
+      <target>
+         <running/>
+      </target>
+      <config>
+         <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+            <managedElementId>1</managedElementId>
+            <Equipment xmlns="urn:com:ericsson:ecim:ReqEquipment">
+               <equipmentId>1</equipmentId>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S1-1</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1,RiPort=A</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-1,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S1-2</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-1,RiPort=DATA_2</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S1-2,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S2-1</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1,RiPort=B</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-1,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S2-2</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-1,RiPort=DATA_2</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S2-2,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S3-1</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=BB-1,RiPort=C</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-1,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+               <RiLink xmlns="urn:com:ericsson:ecim:ReqRiLink">
+                  <riLinkId>S3-2</riLinkId>
+                  <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-1,RiPort=DATA_2</riPortRef1>
+                  <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=Radio-S3-2,RiPort=DATA_1</riPortRef2>
+               </RiLink>
+            </Equipment>
+         </ManagedElement>
+      </config>
+   </edit-config>
+</rpc>
+]]>]]>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"
+     message-id="Configure SectorEquipmentFunction and Reference to Rfbranch, CcBranches for all sectors">
+   <edit-config>
+      <target>
+         <running/>
+      </target>
+      <config>
+         <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+            <managedElementId>1</managedElementId>
+            <NodeSupport xmlns="urn:com:ericsson:ecim:ReqNodeSupport">
+               <nodeSupportId>1</nodeSupportId>
+               <!-- Create SectorEquipmentFunction and References to RfBranches and CcBranches for Sectors=1 with ABB=ABB2_1A-->
+               <SectorEquipmentFunction xmlns="urn:com:ericsson:ecim:ReqSectorEquipmentFunction">
+                  <sectorEquipmentFunctionId>1</sectorEquipmentFunctionId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S1-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S1-2</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S1-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S1-2</rfBranchRef>
+                  <userLabel>Sector configured with RBB22_1A and ABB2_1A</userLabel>
+               </SectorEquipmentFunction>
+               <!-- Create SectorEquipmentFunction and References to RfBranches and CcBranches for Sectors=2 with ABB=ABB2_1A-->
+               <SectorEquipmentFunction xmlns="urn:com:ericsson:ecim:ReqSectorEquipmentFunction">
+                  <sectorEquipmentFunctionId>2</sectorEquipmentFunctionId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S2-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S2-2</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S2-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S2-2</rfBranchRef>
+                  <userLabel>Sector configured with RBB22_1A and ABB2_1A</userLabel>
+               </SectorEquipmentFunction>
+               <!-- Create SectorEquipmentFunction and References to RfBranches and CcBranches for Sectors=3 with ABB=ABB2_1A-->
+               <SectorEquipmentFunction xmlns="urn:com:ericsson:ecim:ReqSectorEquipmentFunction">
+                  <sectorEquipmentFunctionId>3</sectorEquipmentFunctionId>
+                  <administrativeState>UNLOCKED</administrativeState>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S3-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=S3-2</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S3-1</rfBranchRef>
+                  <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,CcBranch=S3-2</rfBranchRef>
+                  <userLabel>Sector configured with RBB22_1A and ABB2_1A</userLabel>
+               </SectorEquipmentFunction>
+            </NodeSupport>
+         </ManagedElement>
+      </config>
+   </edit-config>
+</rpc>
+]]>]]>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="Close session">
+   <close-session/>
+</rpc>
+]]>]]>

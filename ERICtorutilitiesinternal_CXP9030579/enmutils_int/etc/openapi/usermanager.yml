@@ -1,0 +1,222 @@
+---
+openapi: 3.0.0
+info:
+  title: Workload Services API
+  description: Generate Workload towards ENM with the Workload Services API
+  version: 1.0.0
+  contact:
+    name: BladeRunner Support
+    email: 'PDLENMBLAD@pdl.internal.ericsson.com'
+    url: 'https://eteamspace.internal.ericsson.com/display/ERSD/Team%3A+BladeRunners'
+servers:
+  - url: http://localhost:5001/api/v1/
+    description: Usermanager service
+tags:
+  - name: User
+    description: Usermanager Service Routes
+paths:
+  /enm/users:
+    get:
+      tags:
+        - User
+      summary: Get list of usernames for existing users
+      description: 'Returns a list of usernames for all users that exist on ENM. (view_function: enm_users)'
+      responses:
+        '200':
+          $ref: '#/components/responses/getAllUsernames'
+        '404':
+          $ref: '#/components/responses/404Abort'
+  /users:
+    get:
+      tags:
+        - User
+      summary: Returns a list of ENM Users.
+      description: 'Get list of ENM Users that exist. (view_function: get_users)'
+      parameters:
+        - $ref: '#/components/parameters/username'
+        - $ref: '#/components/parameters/profile'
+      responses:
+        '200':
+          $ref: '#/components/responses/getUsers'
+        '404':
+          $ref: '#/components/responses/404Abort'
+  /users/create:
+    post:
+      tags:
+        - User
+      summary: Create ENM User(s)
+      description: 'Create a specified number of ENM users. (view_function: create)'
+      requestBody:
+        $ref: '#/components/requestBodies/createUsers'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /users/delete:
+    delete:
+      tags:
+        - User
+      summary: Delete User(s) from ENM
+      description: 'Warning: Passing no query parameters deletes all users. (view_function: delete_users)'
+      parameters:
+        - $ref: '#/components/parameters/deleteData'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJson'
+        '404':
+          $ref: '#/components/responses/404Abort'
+  /users/sessions:
+    post:
+      tags:
+        - User
+      summary: Get User Session Information for Profile users
+      description: 'Get User sessions information for profile users. (view_function: sessions_per_profile)'
+      requestBody:
+        $ref: '#/components/requestBodies/getSessions'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        username:
+          type: string
+          example: CELLMGT_14_1009-22103967_u14
+        password:
+          type: string
+          format: password
+          example: mySecretPassword
+        keep_password:
+          type: boolean
+          example: true
+        persist:
+          type: boolean
+          example: false
+        _session_key:
+          type: string
+          example: S2~AQIC5wM2LY4SfCMDIAAlNLABMzNDc2NDE0NDMxODI0NjQyODQwAAJTMQACMDM.*
+    createUserBody:
+      description: User create body
+      type: object
+      required:
+        - username_prefix
+        - number_of_users
+        - user_roles
+      properties:
+        username_prefix:
+          type: string
+          example: CELLMGT_01
+        number_of_users:
+          type: integer
+          example: 5
+        user_roles:
+          type: string
+          example: CM_REST_Administrator|Cmedit_Operator
+    getSessions:
+      description: Post data of get sessions
+      type: object
+      required:
+        - profiles
+      properties:
+        profiles:
+          type: array
+          example: [CELLMGT_01]
+  requestBodies:
+    createUsers:
+      description: User create criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/createUserBody'
+    getSessions:
+      description: Sessions request body criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/getSessions'
+  responses:
+    getUsers:
+      description: List of requested users
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/User'
+    getAllUsernames:
+      description: Sucessful request to get all usernames
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: string
+              example: CELLMGT_14_1009-22103967_u14
+    successJson:
+      description: Successful json response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: All users created successfully
+    404Abort:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: >
+                  The requested URL was not found on the server.
+                  If you entered the URL manually please check your spelling and try again.
+    500Abort:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: >
+                  The server encountered an internal error and was unable to complete your request.
+                  Either the server is overloaded or there is an error in the application.
+  parameters:
+    username:
+      name: username
+      in: query
+      description: Target username
+      required: false
+      schema:
+        type: string
+        example: CELLMGT_14_1009-22103967_u14
+    profile:
+      name: profile
+      in: query
+      description: Target profile name
+      required: false
+      schema:
+        type: string
+        example: CELLMGT_01
+    deleteData:
+      name: delete_data
+      in: query
+      description: >
+        Delete data to specify users or groups of users to delete.
+        Note excluding this query string results in all users being deleted.
+      schema:
+        type: string
+        example: '{"username": "User_01", "profile_name": "Test", "user_roles" : "Cmedit_Operator||CM_REST_Administrator"}'

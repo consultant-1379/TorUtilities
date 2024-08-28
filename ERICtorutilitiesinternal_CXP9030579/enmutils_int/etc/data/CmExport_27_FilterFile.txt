@@ -1,0 +1,15 @@
+GNBCUCPFunction.*;
+EUtraNetwork.*;
+NRCellCU.*;
+EUtranCellRelation.*;
+NRCellRelation.*;
+NRFreqRelation.*;
+NRNetwork.*;
+ExternalGNBCUCPFunction.*;
+UeMC+.*;
+UPSelection+.*;
+asymmetric-key$$cmp.(cmp-server-group,renewal-mode)
+asymmetric-keys$$cmp.*
+keystore$$cmp.*
+modules-state$$module.*
+modules-state$$module$$submodule.*

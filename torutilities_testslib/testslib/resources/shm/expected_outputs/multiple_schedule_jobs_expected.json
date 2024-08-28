@@ -1,0 +1,86 @@
+{
+    "1425446408180": {
+        "Comment": "",
+        "Completed": "2015-03-04 06:33:57",
+        "Count": "100",
+        "ExecutionState": "END",
+        "Hidden parameters": {},
+        "Is suspended": "false",
+        "Name": "Create CV",
+        "OldState": "UNKNOWN",
+        "Operator": "suser1",
+        "Parameters": {
+            "SCHEDULE_MODE": "PARALLEL"
+        },
+        "ResultState": "OK",
+        "Started": "2015-03-04 06:33:55",
+        "Swp name": "SYSTEM_CELLO",
+        "ne configuration": [
+            {
+                "Network element": "RNC05"
+            }
+        ],
+        "phase configuration": [
+            {
+                "Activity id": "1425446408181",
+                "Default mode": "IMMEDIATE",
+                "Interaction flag": "false",
+                "Order number": "0",
+                "Parameters": {
+                    "CV_COMMENT": "",
+                    "CV_ID": "",
+                    "CV_NAME": "",
+                    "CV_TYPE": "5",
+                    "CV_USE_DEFAULT_NAME": "true",
+                    "CV_USE_TIME_STAMP": "false"
+                },
+                "Phase name": "CREATE_CV",
+                "Schedulable": "true",
+                "Scheduled": "0",
+                "Type of phase": "CREATE_CV"
+            }
+        ]
+    },
+    "1425446408181": {
+        "Comment": "",
+        "Completed": "2015-03-04 06:33:57",
+        "Count": "100",
+        "ExecutionState": "END",
+        "Hidden parameters": {},
+        "Is suspended": "false",
+        "Name": "Create CV",
+        "OldState": "UNKNOWN",
+        "Operator": "suser1",
+        "Parameters": {
+            "SCHEDULE_MODE": "PARALLEL"
+        },
+        "ResultState": "OK",
+        "Started": "2015-03-04 06:33:55",
+        "Swp name": "SYSTEM_CELLO",
+        "ne configuration": [
+            {
+                "Network element": "RNC05"
+            }
+        ],
+        "phase configuration": [
+            {
+                "Activity id": "1425446408182",
+                "Default mode": "IMMEDIATE",
+                "Interaction flag": "false",
+                "Order number": "0",
+                "Parameters": {
+                    "CV_COMMENT": "",
+                    "CV_ID": "",
+                    "CV_NAME": "",
+                    "CV_TYPE": "5",
+                    "CV_USE_DEFAULT_NAME": "true",
+                    "CV_USE_TIME_STAMP": "false"
+                },
+                "Phase name": "CREATE_CV",
+                "Schedulable": "true",
+                "Scheduled": "0",
+                "Type of phase": "CREATE_CV"
+            }
+        ]
+    }
+}

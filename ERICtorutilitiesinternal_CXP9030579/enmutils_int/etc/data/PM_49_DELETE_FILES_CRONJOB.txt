@@ -1,0 +1,2 @@
+*/30 * * * * root find /upload/PM/ -type f | xargs rm -f
+*/30 * * * * root find /upload/CM/ -type f | xargs rm -f

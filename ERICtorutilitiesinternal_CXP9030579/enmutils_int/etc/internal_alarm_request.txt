@@ -1,0 +1,9 @@
+{
+    "specificProblem":"1234",
+    "probableCause":"SMOKER ALARM",
+    "eventType":"eventType1",
+    "managedObjectInstance":"managedObjectInstance1",
+    "perceivedSeverity":"Major",
+    "recordType":"ALARM"
+}
+

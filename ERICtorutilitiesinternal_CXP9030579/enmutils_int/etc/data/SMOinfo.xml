@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SoftwarePackage SYSTEM "/var/tmp/smo_softwarepackage.dtd" >
+<!--
+   (C) Copyright Ericsson AB, 2005
+
+   The copyright to the computer program(s) herein is the property of
+   Ericsson AB, Sweden. The program(s) may be used and/or copied only with
+   the written permission from Ericsson AB or in accordance with the terms
+   and conditions stipulated in the agreement/contract under which
+   the program(s) have been supplied.
+
+   Default NTP-template for generation of smoinfo.xml to a CPP Software Package. 
+  The template is valid for CPP action 'Upgrade' and 'RebootNodeUpgrade'. CPP action 'Update' needs another template.
+
+   This template file is a part of the document 184/15519-HSD10102/5 rev A
+
+-->
+<SoftwarePackage>
+	<ProductData 
+	Description="Upgrade Package file for RBS CXP9011610 C3POdjk." 
+	Name="UTRAN RBS" 
+	Number="{revision_number}"
+	ReleaseDate="20090806" 
+	Revision="{revision_name}"
+	Type="upgrade"/>
+<!--
+   Type="update" is not allowed for this template !
+-->
+	<NodeType>
+		<NodePlatform Type="CPP"/>
+		<NodeFunction>
+			<ERBS/>
+		</NodeFunction>
+	</NodeType>
+	<CommonScriptParams>
+		<JobParams>
+			<Parameter Name="SMO_UPGRADE_CONTROL_FILE">
+				<Enum Prompt="The name of upgrade control file" 
+				      Value="CXP9011610_C3PO.xml">
+                                <Item>CXP9011610_C3PO.xml</Item>
+                                <Item>CXP9011610_C3PO1.xml</Item>
+
+
+				</Enum>
+			</Parameter>
+		</JobParams>
+	</CommonScriptParams>
+	<Activity Name="Installation">
+		<Startup>
+			<Immediate Default="true"/>
+			<Manual/>
+			<Scheduled/>
+		</Startup>
+		<JobParams>
+			<Parameter Name="SMO_INSTALL_TRANSFER_TYPE">
+				<Enum Prompt="Load Module transfer type" Value="delta">
+					<Item>delta</Item>
+					<Item>full</Item>
+				</Enum>
+			</Parameter>
+			<Parameter Name="SMO_INSTALL_SELECT_TYPE">
+				<Enum Prompt="Load module selection at install" Value="not selective">
+					<Item>not selective</Item>
+				</Enum>
+			</Parameter>
+		</JobParams>
+	</Activity>
+	<Activity Name="Verify Upgrade">
+		<Startup>
+			<Immediate Default="true"/>
+			<Manual/>
+			<Scheduled/>
+		</Startup>
+	</Activity>
+	<Activity Name="Upgrade">
+		<Startup>
+			<Immediate Default="true"/>
+			<Manual/>
+			<Scheduled/>
+		</Startup>
+		<JobParams>
+			<Parameter Name="SMO_UPGRADE_REBOOT">
+				<Boolean Prompt="Reboot node upgrade?" Value="true"/>
+			</Parameter>
+		</JobParams>
+	</Activity>
+	<Activity Name="Confirm Upgrade">
+		<Startup>
+			<Immediate Default="true"/>
+			<Manual/>
+			<Scheduled/>
+		</Startup>
+	</Activity>
+	<Activity Name="SWAdjust">
+		<Startup>
+			<Immediate Default="true"/>
+			<Manual/>
+			<Scheduled/>
+		</Startup>
+	</Activity>
+</SoftwarePackage>

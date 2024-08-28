@@ -1,0 +1,155 @@
+{
+  "networkElementConfiguration": {
+    "neNames": "{{ node_ids }}",
+    "collectionNames": "",
+    "savedSearchNames": "",
+    "selectedNeNames": ""
+  },
+  "softwarePackageConfiguration" : {
+    "softwarePackages" : {{ software_packages }}
+  },
+  "preparationPhaseConfiguration": {
+    "preparationSchedule": {
+      "selectPreparationScheduleMode": {
+        "immediately": true
+      }
+    },
+    "housekeeping": {
+      "performUpgradePackageDeletion": {
+        "flowBehaviorOnFailure": "EXCLUDE_NODE_FROM_UPGRADE"
+      },
+      "performBackupDeletion": {
+        "numberOfBackupsToRetain": 5,
+        "flowBehaviorOnFailure": "EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "preInstallScript" : {
+      "performPreInstallScript" : {
+        "RadioNode" : {
+          "scriptTimeout" : 600,
+          "flowBehaviorOnFailure" : "EXCLUDE_NODE_FROM_UPGRADE",
+          "scriptFilePath" : "/home/shared/ASU/radioNodePreInstall.sh"
+        }
+      }
+    },
+    "preInstallBackup": {
+      "performPreInstallNodeBackup": {
+        "preInstallBackupName": "pre-install_$productnumber_$productrevision_$timestamp",
+        "uploadBackupToENM": {},
+        "flowBehaviorOnFailure": "EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "preInstallLicenseInstallation": {},
+    "postInstallBackup": {},
+    "preInstallHealthChecks": {
+      "performPreInstallHealthCheck": {
+        "RadioNode": {
+          "predefined": {
+            "performNodeHealthCheck": true,
+            "performAdditionalHealthCheck": {
+              "critcalAlarmCheck": true,
+              "majorAlarmCheck": true,
+              "cmSyncStatus": true
+            }
+          }
+        },
+        "flowBehaviorOnFailure": "DO_NOT_EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "preUpgradeLicenseInstallation": {}
+  },
+  "activationPhaseConfiguration": {
+    "activationSchedule": {
+      "selectActivationScheduleMode": {
+        "immediately": true
+      }
+    },
+    "FMAlarmSupervision": {},
+    "preUpgradeScript" : {
+      "performPreUpgradeScript" : {
+        "RadioNode" : {
+          "scriptTimeout" : 600,
+          "flowBehaviorOnFailure" : "EXCLUDE_NODE_FROM_UPGRADE",
+          "scriptFilePath" : "/home/shared/ASU/radioNodePreUpgrade.sh"
+        }
+      }
+    },
+    "preUpgradeLicenseInstallation": {},
+    "preUpgradeBackup": {
+      "performPreUpgradeNodeBackup": {
+        "preUpgradeBackupName": "pre-upgrade_$productnumber_$productrevision_$timestamp",
+        "uploadBackupToENM": {},
+        "flowBehaviorOnFailure": "EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "activateSoftwarePackage": {
+      "selectUpgradeType": "HARD"
+    },
+    "postUpgradeScript" : {
+      "performPostUpgradeScript" : {
+        "RadioNode" : {
+          "scriptTimeout" : 600,
+          "flowBehaviorOnFailure" : "EXCLUDE_NODE_FROM_UPGRADE",
+          "scriptFilePath" : "/home/shared/ASU/radioNodePostUpgrade.sh"
+        }
+      }
+    },
+    "postUpgradeBackup": {
+      "performPostUpgradeNodeBackup": {
+        "postUpgradeBackupName": "post-upgrade_$productnumber_$productrevision_$timestamp",
+        "uploadBackupToENM": {
+
+        },
+        "flowBehaviorOnFailure": "EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "cleanUpScript" : {
+      "performCleanUpScript" : {
+        "RadioNode" : {
+          "scriptTimeout" : 600,
+          "scriptFilePath" : "/home/shared/ASU/radioNodeCleanup.sh"
+        }
+      }
+    },
+    "preUpgradeHealthChecks": {
+      "performPreUpgradeHealthCheck": {
+        "RadioNode": {
+          "predefined": {
+            "performNodeHealthCheck": true,
+            "performAdditionalHealthCheck": {
+              "critcalAlarmCheck": true,
+              "majorAlarmCheck": true,
+              "cmSyncStatus": true
+            }
+          }
+        },
+        "flowBehaviorOnFailure": "DO_NOT_EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "postUpgradeHealthChecks": {
+      "performPostUpgradeHealthCheck": {
+        "RadioNode": {
+          "predefined": {
+            "performNodeHealthCheck": true,
+            "performAdditionalHealthCheck": {
+              "critcalAlarmCheck": true,
+              "majorAlarmCheck": true
+            }
+          }
+        },
+        "delay": 5,
+        "flowBehaviorOnFailure": "DO_NOT_EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    },
+    "nodeHealthDegradationCheck": {
+      "performNodehealthDegradationCheck": {
+        "flowBehaviorOnFailure": "DO_NOT_EXCLUDE_NODE_FROM_UPGRADE"
+      }
+    }
+  },
+  "emailConfiguration": { },
+  "phasesSelection": {
+    "activationPhase": {},
+    "preparationPhase": {}
+  }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:es="EricssonSpecificAttributes.16.08.xsd" xmlns:un="utranNrm.xsd" 
+     xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns="configData.xsd">
+
+<fileHeader fileFormatVersion="32.615 V4.5" vendor="Ericsson"/>
+
+     <configData dnPrefix="">
+
+     <xn:ManagedElement id="1">
+         <xn:VsDataContainer id="1" mimName="Lrat">
+             <xn:attributes>
+             <xn:vsDataType>vsDataENodeBFunction</xn:vsDataType>
+             <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.08</xn:vsDataFormatVersion>
+             <es:vsDataENodeBFunction/>
+             </xn:attributes>
+             <xn:VsDataContainer id="13" modifier="create">
+             <xn:attributes>
+             <xn:vsDataType>vsDataSectorCarrier</xn:vsDataType>
+             <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.08</xn:vsDataFormatVersion>
+             <es:vsDataSectorCarrier>
+             <es:noOfTxAntennas>0</es:noOfTxAntennas>
+             <es:partOfSectorPower>100</es:partOfSectorPower>
+             <es:prsEnabled>true</es:prsEnabled>
+             <es:rfBranchTxRef/>
+             <es:noOfRxAntennas>0</es:noOfRxAntennas>
+             <es:rfBranchRxRef/>
+             <es:ulForcedTimingAdvanceCommand>0</es:ulForcedTimingAdvanceCommand>
+             <es:sectorFunctionRef>
+             ManagedElement=1,vsDataNodeSupport=1,vsDataSectorEquipmentFunction=1
+             </es:sectorFunctionRef>
+             </es:vsDataSectorCarrier>
+             </xn:attributes>
+             </xn:VsDataContainer>
+         </xn:VsDataContainer>
+     </xn:ManagedElement>
+
+     </configData>
+
+     <fileFooter dateTime="2015-09-04T13:53:29Z"/>
+
+</bulkCmConfigDataFile>

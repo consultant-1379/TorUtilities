@@ -1,0 +1,900 @@
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NAYR013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JTPA012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JTPA013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JTPA011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SWR0051"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NAYR012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TBST111"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TBST112"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TON036A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0054"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KNOS011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HTND013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RPNG013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HTND012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KIRP011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SALI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LADR013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LADR011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RPNG012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RPNG011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GHLT013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HBSP011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GHLT011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HBSP012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRGG012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HWR0522"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DPTR012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PDGA013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PAGR012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PDGA012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JMLA011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHRI013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KEHI013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHRI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHRI011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KEHI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BOGL012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HWR0531"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BJTA013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BOGL011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HWR0533"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEAK012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BOGL013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GLGV011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DDRI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEAK011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KKLN012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GTYL021"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PRAA011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BISN012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BISN013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GTYL022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BMDW012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KCRY011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KCRY012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PRAA012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GORH012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MHRK012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KDE0012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KDE0013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MHRK011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KCRY013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PELJ013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SKHA011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRKY013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRKY012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SKHA013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SKHA012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GOVN022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SIVP011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SIVP013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PEE0022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GOVN023"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NNDS013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=CHUD013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=CHUD011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BOOK013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NNDS012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDLI013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GNSP012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDLI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWR113"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWR111"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GAIL01B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PHKI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GOY0013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GOY0012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KNKL011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TON036C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PNER113"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SWR0012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SWR0011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GAIL01C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SPLA013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TDR0022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BJN0022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TDR0023"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TNTI012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TNTI011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JLY0013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BNY0011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BNY0013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JLY0012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TON032C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KKRR014"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GRKD013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NGOL013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NGOL011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GRKD012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JTYN013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DLKN012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DLKN011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=CPNR013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=CPNR012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KEER013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KEER011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DNAT012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHWT013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHWT012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHWT011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JSTP011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RMGE013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RMGE011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KESR011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NDWR011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSHN012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KHRW012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RMGE012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KHRW013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SUHW022"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SUHW023"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KHRW011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0152"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MSD0032"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWS011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWS012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWS013"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0191"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0142"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0141"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RATP012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0153"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0223"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0221"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SLLR01B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BDWR011"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0231"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0241"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BEA0242"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SUHW012"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3205C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3243C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3205A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3205B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1550C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1552B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2499B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1552A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2499A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5421C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5608C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2461B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5421B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5407A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5166B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5411B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5166C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5411C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD367B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD847B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5197A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD367A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5197C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5197B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2695C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3243A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3292B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3292A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3655A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5068A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3739C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD324A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD686C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD686B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD686A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3108A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3108C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5417C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5687B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5417A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5757B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5757C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5680B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5489C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5680A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5698A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5594C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5658A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5737C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5737A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5458A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5416C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5416B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5658C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5419B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5684B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5436A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5458C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5684C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5537B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5763B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5449A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5449B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5537C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5763C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5410C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5410A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5471A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5645A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BAP005A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5702A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5793C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BAP004A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5702B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BAP006C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BAP005C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1826B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BAP005B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1838B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2105A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2083C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1892A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1892B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2083B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2849B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2211C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2211A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2852A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2332C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3651C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3174C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3174A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3651B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3653B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5175B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5175C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3654A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3654C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5092B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5215A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRV004A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRV003A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRV003C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY5215B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK001A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK002C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK002B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK004A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK002A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK004C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK005C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK005A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK004B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1409C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1409A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1409B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK007C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRK007B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1668B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1835C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1878B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1668C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1835B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2367B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1879C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2331B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2367C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1879A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2462C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3176A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2817C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2462B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY2562C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3527A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3268B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3176B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3268C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY3506C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD208B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1144B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD079B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HYD079C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1168C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1168B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1202B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1202C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1144C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1574B"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1880A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HY1629C"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=QUTBMN1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BRRSRI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=AAAMRG3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASNTN1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSKUNC2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=QUTBMN3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASNTN2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ANDMOR3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ANDRIA1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ANDMOR2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=S3MHLO1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ANDMOR4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KISANG3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=FORTSV1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=CHTPR23"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSNGRH3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IBMVSK1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSNGRH2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MSUDPR1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LADSRI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=S3MHLO2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MASUDP2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MASUDP3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=TRIUNI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NMROAD3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MSUDPU3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=NMROAD4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VKUNJC2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSND7B1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSTCON1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PNSHEL2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSND7B3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSNLOK1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LDOSR13"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=AMBADC1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITHMD1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=E20295A"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=AMBADC3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=EMPRIO2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LADOSR2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=EADDSS2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GRAND12"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=EADDSS1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=GRAND11"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MAHRLI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MEHRLI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DDA0743"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MEHRLI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MAHRLI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MSDPUR3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MSDPUR1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASKNJ1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MEHRLI3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=QUTBRD1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITLCH3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSKNJC2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSKNJC3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSKUNJ1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ROSEGD1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KISNGR1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DDA0712"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KISNGR3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DDA0711"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JPENXE1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MBJLNU3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASBLK3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SPINAL2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MHRULI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MHRULI3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASBLK1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VKUNJB2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ADCHIN1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VKUNJD3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VKUNJD1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSTEST1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MEHRLE3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MBVSKU2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSNDKD2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VSNDKD1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=S3114O1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITLCH4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=QUTBIN3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KATWAR1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITLCH5"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BERSRI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KATWAR2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KATSRI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNEKA4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=LXMMKT3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MBNLSN2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MBNLSN3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNEKA1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITMSB2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNRGA1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNMKK2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNIMR2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNRGA3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNRKK3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNVLG3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNVLG1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=VASNKJ3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNRRK2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITMSB3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RKPUR21"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=IITMSB4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ADCHNI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JIASRI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JIASRI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=S2114O1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RKPUS31"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ROSEGD2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RKPUR23"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RKPUS32"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SHVLEK2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRPRVI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SHVLEK3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SAFDAR1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SAFDAR3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JIASRE4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SRVDYA2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SFJNEC2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=JIASRE2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ADCHIN2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ADCHIN3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ADCHNJ2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=S3114O2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHAVIS2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNRKA3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=BHAVIS3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=DDAPRK3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=RKSTDM3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSARAI4"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSARAI2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=KSARAI1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNMKT1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SHVLIK1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ONSTYM3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNMKT3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ONSTYM1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=ONSTYM2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PSHEEL3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SHVLIK3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=PSHEEL2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=SHVLIK2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=QUTINS1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HUMPUR3"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MBRKMT1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNIRK1"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=HUMPUR2"
+DELETE
+FDN : "SubNetwork=Europe,SubNetwork=Ireland,SubNetwork=NETSimG,MeContext=M47B94,ManagedElement=M47B94,BscFunction=1,BscM=1,GeranCellM=1,GeranCell=MUNIRK3"

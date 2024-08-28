@@ -1,0 +1,90 @@
+{
+   "1425446408180":{
+      "Count":"100",
+      "Comment":"",
+      "Name":"Create CV",
+      "Parameters":{
+         "SCHEDULE_MODE":"PARALLEL"
+      },
+      "ExecutionState":"END",
+      "OldState":"UNKNOWN",
+      "phase configuration":[
+         {
+            "Scheduled":"0",
+            "Schedulable":"true",
+            "Parameters":{
+               "CV_COMMENT":"",
+               "CV_USE_DEFAULT_NAME":"true",
+               "CV_ID":"",
+               "CV_NAME":"",
+               "CV_TYPE":"5",
+               "CV_USE_TIME_STAMP":"false"
+            },
+            "Phase name":"CREATE_CV",
+            "Default mode":"IMMEDIATE",
+            "Interaction flag":"false",
+            "Activity id":"1425446408181",
+            "Type of phase":"CREATE_CV",
+            "Order number":"0"
+         }
+      ],
+      "ne configuration":[
+         {
+            "Network element":"RNC05"
+         }
+      ],
+      "Hidden parameters":{
+
+      },
+      "Swp name":"SYSTEM_CELLO",
+      "ResultState":"OK",
+      "Operator":"suser1",
+      "Completed":"1970-01-01 01:00:00",
+      "Is suspended":"false",
+      "Started:":"2015-03-04 06:33:55"
+   },
+   "1425446408181":{
+      "Count":"100",
+      "Comment":"",
+      "Name":"Create CV",
+      "Parameters":{
+         "SCHEDULE_MODE":"PARALLEL"
+      },
+      "ExecutionState":"END",
+      "OldState":"UNKNOWN",
+      "phase configuration":[
+         {
+            "Scheduled":"0",
+            "Schedulable":"true",
+            "Parameters":{
+               "CV_COMMENT":"",
+               "CV_USE_DEFAULT_NAME":"true",
+               "CV_ID":"",
+               "CV_NAME":"",
+               "CV_TYPE":"5",
+               "CV_USE_TIME_STAMP":"false"
+            },
+            "Phase name":"CREATE_CV",
+            "Default mode":"IMMEDIATE",
+            "Interaction flag":"false",
+            "Activity id":"1425446408182",
+            "Type of phase":"CREATE_CV",
+            "Order number":"0"
+         }
+      ],
+      "ne configuration":[
+         {
+            "Network element":"RNC05"
+         }
+      ],
+      "Hidden parameters":{
+
+      },
+      "Swp name":"SYSTEM_CELLO",
+      "ResultState":"OK",
+      "Operator":"suser1",
+      "Completed":"2015-03-04 06:33:57",
+      "Is suspended":"false",
+      "Started:":"2015-03-04 06:33:55"
+   }
+}

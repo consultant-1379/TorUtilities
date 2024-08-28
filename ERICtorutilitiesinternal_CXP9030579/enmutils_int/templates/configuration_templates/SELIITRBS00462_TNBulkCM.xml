@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns:es="EricssonSpecificAttributes.14.02.xsd" xmlns="configData.xsd">
+    <fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+    <configData dnPrefix="SubNetwork=%NodeName%">
+		<xn:SubNetwork id="%NodeName%">
+			<xn:ManagedElement id="%NodeName%">  
+				<!-- Transport -->
+				<xn:VsDataContainer id="1">
+					<xn:attributes>
+						<xn:vsDataType>vsDataTransport</xn:vsDataType>
+						<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+						<es:vsDataTransport/>
+					</xn:attributes>
+					
+					<!-- SctpProfile -->
+					<xn:VsDataContainer id="1" modifier="create" mimName="RtnSctpProfile">
+						<xn:attributes>
+							<xn:vsDataType>vsDataSctpProfile</xn:vsDataType>
+							<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+							<es:vsDataSctpProfile>
+							<!-- IPv4: maxSctpPduSize=1480 (default value) -->
+							<!-- IPv6: maxSctpPduSize=1460 -->
+								<!--es:maxSctpPduSize>1460</es:maxSctpPduSize-->
+							</es:vsDataSctpProfile>
+						</xn:attributes>
+					</xn:VsDataContainer> 
+            		<!-- SctpProfile -->
+					
+					<!-- SctpEndpoint -->
+					<xn:VsDataContainer id="1" modifier="create" mimName="RtnSctpEndPoint">
+						<xn:attributes>
+							<xn:vsDataType>vsDataSctpEndpoint</xn:vsDataType>
+							<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+							<es:vsDataSctpEndpoint>
+								<es:portNumber>36422</es:portNumber>
+								<es:sctpProfile>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataTransport=1,vsDataSctpProfile=1</es:sctpProfile>
+								<es:localIpAddress>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataTransport=1,vsDataRouter=TRAFFIC,vsDataInterfaceIPv4=1,vsDataAddressIPv4=1</es:localIpAddress>
+							</es:vsDataSctpEndpoint>
+						</xn:attributes>
+					</xn:VsDataContainer>
+					<!-- SctpEndpoint -->				
+					
+					<!-- Synchronization -->
+					<xn:VsDataContainer id="1" modifier="update" mimName="RsyncSynchronization">
+						<xn:attributes>
+							<xn:vsDataType>vsDataSynchronization</xn:vsDataType>
+							<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+							<es:vsDataSynchronization>
+								<es:telecomStandard>1</es:telecomStandard>
+							</es:vsDataSynchronization>
+						</xn:attributes>
+						
+						<!-- TimeSyncIO -->
+						<xn:VsDataContainer id="1" modifier="create" mimName="RsyncTimeSyncIO">
+							<xn:attributes>
+								<xn:vsDataType>vsDataTimeSyncIO</xn:vsDataType>
+								<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+								<es:vsDataTimeSyncIO>
+									<es:encapsulation>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataEquipment=1,vsDataFieldReplaceableUnit=1,vsDataSyncPort=1</es:encapsulation>
+								</es:vsDataTimeSyncIO>
+							</xn:attributes>				
+							<!-- GnssInfo -->
+							<xn:VsDataContainer id="1" modifier="create" mimName="RsyncGnssInfo">
+								<xn:attributes>
+									<xn:vsDataType>vsDataGnssInfo</xn:vsDataType>
+									<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+									<es:vsDataGnssInfo />
+								</xn:attributes>
+							</xn:VsDataContainer>  <!-- GnssInfo -->
+						</xn:VsDataContainer>  <!-- TimeSyncIO, GnssInfo -->
+						<!-- RadioEquipmentClock -->
+						<xn:VsDataContainer id="1" modifier="create" mimName="RsyncRadioEquipmentClock">
+							<xn:attributes>
+								<xn:vsDataType>vsDataRadioEquipmentClock</xn:vsDataType>
+								<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+								<es:vsDataRadioEquipmentClock>
+									<es:minQualityLevel>
+										<es:qualityLevelValueOptionI>SSU_A</es:qualityLevelValueOptionI>
+										<es:qualityLevelValueOptionII>%TN_qualityLevelValueOptionII%</es:qualityLevelValueOptionII>
+										<es:qualityLevelValueOptionIII>5</es:qualityLevelValueOptionIII>
+									</es:minQualityLevel>
+								</es:vsDataRadioEquipmentClock>
+							</xn:attributes>
+							
+							<!-- RadioEquipmentClockReference -->
+							<xn:VsDataContainer id="1" modifier="create" mimName="RsyncRadioEquipmentClockReference">
+								<xn:attributes>
+									<xn:vsDataType>vsDataRadioEquipmentClockReference</xn:vsDataType>
+									<xn:vsDataFormatVersion>EricssonSpecificAttributes.14.02</xn:vsDataFormatVersion>
+									<es:vsDataRadioEquipmentClockReference>
+										<es:administrativeState>1</es:administrativeState>
+										<es:encapsulation>SubNetwork=%NodeName%,ManagedElement=%NodeName%,vsDataTransport=1,vsDataSynchronization=1,vsDataTimeSyncIO=1</es:encapsulation>
+										<es:adminQualityLevel>
+											<es:qualityLevelValueOptionI>SSU_A</es:qualityLevelValueOptionI>
+											<es:qualityLevelValueOptionII>4</es:qualityLevelValueOptionII>
+											<es:qualityLevelValueOptionIII>5</es:qualityLevelValueOptionIII>
+										</es:adminQualityLevel>
+										<es:priority>2</es:priority>
+									</es:vsDataRadioEquipmentClockReference>
+								</xn:attributes>							
+							</xn:VsDataContainer>
+							<!-- RadioEquipmentClockReference -->	
+						</xn:VsDataContainer>
+						<!-- RadioEquipmentClock -->		
+					</xn:VsDataContainer>
+					<!-- Synchronization -->	
+				</xn:VsDataContainer>
+				<!-- Transport -->				
+			</xn:ManagedElement>
+		</xn:SubNetwork>
+	</configData>
+	<fileFooter dateTime="2016-10-13T15:40:00Z" />
+</bulkCmConfigDataFile>

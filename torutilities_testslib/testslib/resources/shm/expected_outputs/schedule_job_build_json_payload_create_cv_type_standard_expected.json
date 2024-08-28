@@ -1,0 +1,44 @@
+{
+    "mainSchedule": {
+        "execMode": "SCHEDULED",
+        "scheduleAttributes": [
+            {
+                "name": "START_DATE",
+                "value": "1/1/1"
+            }
+        ]
+    },
+    "name": "Create CV",
+    "activitySchedules": [
+        {
+            "PlatformType": "CPP",
+            "value": []
+        }
+    ],
+    "neNames": [
+        {
+            "name": "RNC05"
+        }
+    ],
+    "configurations": [
+        {
+            "platform": "CPP",
+            "properties": [
+                {
+                    "key": "CV_NAME",
+                    "value": "CV_NAME"
+                },
+                {
+                    "key": "CV_TYPE",
+                    "value": "Standard"
+                },
+                {
+                    "key": "CV_IDENTITY",
+                    "value": "Backup_1425446408181"
+                }
+            ]
+        }
+    ],
+    "jobType": "BACKUP",
+    "description": ""
+}

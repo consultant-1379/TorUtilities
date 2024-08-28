@@ -1,0 +1,6 @@
+{
+  "usermanager": {"port": 5001, "P1":  true, "P2":  true, "tool":  true, "test": false, "threads":  20},
+  "nodemanager": {"port": 5002, "P1":  true, "P2":  true, "tool":  true, "test": false, "threads":  100},
+  "profilemanager": {"port": 5003, "P1":  true, "P2":  true, "tool":  true, "test": false, "threads":  20},
+  "deploymentinfomanager": {"port": 5004, "P1":  true, "P2":  true, "tool":  true, "test": false, "threads":  20}
+}

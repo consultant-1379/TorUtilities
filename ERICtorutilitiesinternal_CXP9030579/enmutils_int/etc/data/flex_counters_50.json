@@ -1,0 +1,556 @@
+[
+    {
+        "flexCounterName": "pmEbsEndcRelDrbAbnormalSgnbAct_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcEndcRelease"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsUeCtxtEstabSucc_mcc310mnc410",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcInitialCtxtEstab"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionModifySucc_mcc310mnc410",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcPduSessionResourceModify"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsLocRepReqSucc_LocReportType1-3",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcLocationReporting"
+        ],
+        "sourceObject": [
+            "GNBCUCPFunction"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepAttOutDrbIntraGnb_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsRrcConnReestDrbAtt_Arp0-15",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcRrcReestabDrb"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepAttOutDrbInterGnb_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionSnssaiLevelSum_sst3sd5",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpPerCellPduSession"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoExeAttOutDrbInterGnb_UeServiceGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoExeOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsRrcResumeAtt_Arp0-15",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcRrcResume"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepSuccOutDrbEutran_UeServiceGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoExeSuccOutInterGnbXn_NrDcConfigured1",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoExeOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoExeAttOutDrbIntraGnb_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoExeOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsRrcResumeSuccFallback_Arp0-15",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcRrcResume"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsEndcSetupDrbAtt_Arp0-15",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcEndcSetup"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsEndcRelDrbAbnormalMenbAct_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcEndcRelease"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsLocRepTrans_mcc310mnc410",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpNgLocationReport"
+        ],
+        "sourceObject": [
+            "GNBCUCPFunction"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionEstabSucc_mcc310mnc122|410|951",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcInitialCtxtEstab",
+            "CuCpProcPduSessionResourceSetup"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsEndcRelDrbAbnormalSgnbActCauseGrp$X2Cause$_Arp0-15",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcEndcRelease"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsEndcSetupUeFailCauseGrp$X2Cause$_PrefUeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcEndcSetup"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlNack64Qam_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsUeCtxtSetupFailUeCapFail_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuProcUeContextSetup"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlAck64Qam_mcc310mnc410",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacVolDlDrb_Qos0-254",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeRbTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlDtx16Qam_PrefUeGrpId50",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacVolDlDrb_PrefUeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeRbTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsMacLatTimeDlNoDrxSyncQos_Qos0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerCellQosTrafficRep"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsMacLatTimeDlDrxSyncQos_Qos45",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerCellQosTrafficRep"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlDtxQpsk_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnPdcpPktTransDlDiscQos_UeMobilityGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUUP",
+        "basedOnEvent": [
+            "CuUpPerUeRbCgTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "RpUserPlaneLink"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionModifySucc_PrefUeGrpId0-255_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcPduSessionResourceModify"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoExeSuccOutDrbInterGnb_mcc310mnc410_NrDcConfigured1",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoExeOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsDrbRelAbnormalAmf5qi_PrefUeGrpId0-255_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcPduSessionResourceModify",
+            "CuCpProcUeCtxtRel"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsUeCtxtEstabSucc_mcc310mnc410_PrefUeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcInitialCtxtEstab"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsRrcConnReestDrbAtt_Arp0-15_Qos0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcRrcReestabDrb"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionEstabAtt_mcc310mnc410|462_sst1",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcInitialCtxtEstab",
+            "CuCpProcPduSessionResourceSetup"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsNrdcSetupMnBufMonReport_Arp0-15_Qos0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpMnNrdcSetupBufMonReport"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsPduSessionRelNormal_PrefUeGrpId0-255_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcPduSessionResourceRelease",
+            "CuCpProcUeCtxtRel"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepAttOutDrbInterGnb_mcc310mnc410_NrDcConfigured2",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlDtx16Qam_PrefUeGrpId45_UePowerClass2",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlNack64Qam_PrefUeGrpId50_UeMobilityGrpId15",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnRlcDelayPktTransmitDlQos_UeGrpId0-254_UeMobilityGrpId0-254",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeRbTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacTimeDlDrb_PrefUeGrpId25_Qos7",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeRbTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnPdcpPktRecDl5qi_mcc310mnc410_Qos0-254",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUUP",
+        "basedOnEvent": [
+            "CuUpPerUeRbS1NgTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "EP_NgU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsUeCtxtEstabSucc_PrefUeGrpId0-254_UeGrpId0-255_UePowerClass1-5",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcInitialCtxtEstab"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepAttOutIntraGnbIntraF_mcc310mnc410_PrefUeGrpId80_NrDcConfigured1",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsHoPrepSuccOutInterGnb_mcc310mnc410_PrefUeGrpId82_NrDcConfigured2",
+        "nodeType": "RadioNode",
+        "networkFunction": "CUCP",
+        "basedOnEvent": [
+            "CuCpProcNrHoPrepOut"
+        ],
+        "sourceObject": [
+            "NRCellCU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlDtx64Qam_UeMobilityGrpId0-255_PrefUeGrpId0-255_UeGrpId0-255",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacTimeDlDrb_PrefUeGrpId25_sst1_UeMobilityGrpId9",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeRbTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    },
+    {
+        "flexCounterName": "pmEbsnMacUeHarqUlAck64Qam_QosType2_PrefUeGrpId45_UePowerClass2_UeMobilityGrpId26",
+        "nodeType": "RadioNode",
+        "networkFunction": "DU",
+        "basedOnEvent": [
+            "DuPerUeTrafficRepAggr10"
+        ],
+        "sourceObject": [
+            "NRCellDU"
+        ]
+    }
+]

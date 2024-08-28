@@ -1,0 +1,87 @@
+{
+  "activationPhaseConfiguration" : {
+    "activationSchedule" : {
+      "selectActivationScheduleMode" : {
+        "immediately" : true
+      },
+      "durationInput" : 7
+    },
+    "sendEmailNotification" : {
+      "emailaddress" : [],
+      "emailReportAs" : {
+        "attachReportLink" : false,
+        "attachReport" : false
+      }
+    }
+  },
+  "rawNumberOfCells" : "{{number_of_cells}}",
+  "networkElementConfiguration" : {
+    "neNames" : "{{node_ids}}",
+    "collectionNames" : "",
+    "savedSearchNames" : ""
+  },
+  "rawNodeCells" : "{{node_name_and_cells}}",
+  "activities" : {
+    "kpiActivity" : {
+      "selectedKpis": [
+        {
+          "kpi": "Added E-RAB Establishment Success Rate"
+        },
+        {
+          "kpi": "Average Cell UL PDCP Throughput"
+        },
+        {
+          "kpi": "Average DL UE Latency"
+        },
+        {
+          "kpi": "Average PDCP Cell DL Throughput"
+        },
+        {
+          "kpi": "Average UE PDCP DL Throughput"
+        },
+        {
+          "kpi": "Average UE UL PDCP Throughput"
+        },
+        {
+          "kpi": "DL Scheduled Entities per TTI"
+        },
+        {
+          "kpi": "Downlink PRB Utilization"
+        },
+        {
+          "kpi": "E-RAB Retainability Percentage Lost"
+        },
+        {
+          "kpi": "E-RAB Retainability Session Time Normalized Loss Rate"
+        },
+        {
+          "kpi": "Initial E-RAB Establishment Success Rate"
+        },
+        {
+          "kpi": "Mobility Success Rate"
+        },
+        {
+          "kpi": "PDCCH Utilization"
+        },
+        {
+          "kpi": "UL Scheduled Entities per TTI"
+        },
+        {
+          "kpi": "Uplink PRB Utilization"
+        },
+        {
+          "kpi": "Uplink Packet Loss Rate"
+        }
+      ]
+    },
+    "nhcActivity" : {
+      "interval" : {
+        "hourly" : true
+      },
+      "selectedHealthCheckProfiles" : [ {
+        "name" : "TERE-NHC-Profile"
+      } ]
+    }
+  },
+  "rawNetworkElements" : "{{node_ids}}"
+}

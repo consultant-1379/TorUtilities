@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns:es="EricssonSpecificAttributes.14.02.xsd" xmlns="configData.xsd">
+    <fileHeader fileFormatVersion="32.615 V4.5" vendorName="Ericsson"/>
+    <configData dnPrefix="SubNetwork=%NodeName%">
+		<xn:SubNetwork id="%NodeName%">
+			<xn:ManagedElement id="%NodeName%">
+            <!-- Create ENodeBFunction -->
+				<xn:VsDataContainer id="1" modifier="create">
+					<xn:attributes>
+						<xn:vsDataType>vsDataENodeBFunction</xn:vsDataType>
+						<xn:vsDataFormatVersion>EricssonSpecificAttributes</xn:vsDataFormatVersion>
+						<es:vsDataENodeBFunction>
+							<es:eNodeBPlmnId>
+								<es:mcc>262</es:mcc>
+								<es:mnc>80</es:mnc>
+								<es:mncLength>2</es:mncLength>
+							</es:eNodeBPlmnId>
+							<es:eNBId>%Enb_eNBId%</es:eNBId>
+							<es:upIpAddressRef>SubNetwork=%NodeName%,ManagedElement=%NodeName%,Transport=1,Router=TRAFFIC,InterfaceIPv4=1,AddressIPv4=1</es:upIpAddressRef>
+                            <!--es:sctpRef>SubNetwork=%NodeName%,ManagedElement=%NodeName%,Transport=1,SctpEndpoint=1</es:sctpRef-->
+						</es:vsDataENodeBFunction> 
+					</xn:attributes>
+				</xn:VsDataContainer>
+			</xn:ManagedElement>
+		</xn:SubNetwork>
+	</configData>
+	<fileFooter dateTime="2016-10-13T15:40:00Z" />
+</bulkCmConfigDataFile>

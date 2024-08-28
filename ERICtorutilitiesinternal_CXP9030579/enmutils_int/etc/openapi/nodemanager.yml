@@ -1,0 +1,253 @@
+---
+openapi: 3.0.0
+info:
+  title: Workload Services API
+  description: Generate Workload towards ENM with the Workload Services API
+  version: 1.0.0
+  contact:
+    name: ENM/BladeRunners
+servers:
+  - url: http://localhost:5002/api/v1/
+    description: NodeManager service
+tags:
+  - name: NodeManager
+    description: NodeManager Service Routes
+paths:
+  /nodes/update_poids:
+    post:
+      tags:
+        - NodeManager
+      summary: Update POID attributes on Nodes.
+      description: 'Update POID attributes on Nodes. (view_function: update_poids)'
+      requestBody:
+        $ref: '#/components/requestBodies/updatePoids'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/reset:
+    post:
+      tags:
+        - NodeManager
+      summary: Reset the nodes in the pool or remove the network values persisted.
+      description: 'Reset the nodes in the pool or remove the network values persisted. (view_function: reset_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/resetNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/remove:
+    post:
+      tags:
+        - NodeManager
+      summary: Remove the supplied node range from redis.
+      description: 'Removes all or a specific file range of nodes from redis. (view_function: remove_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/removeNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/add:
+    post:
+      tags:
+        - NodeManager
+      summary: Add the supplied node range to redis.
+      description: 'Adds all or a specific file range of nodes to redis. (view_function: add_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/addNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/list:
+    post:
+      tags:
+        - NodeManager
+      summary: List the nodes available in redis.
+      description: 'List the nodes available in redis. (view_function: list_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/listNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/allocate:
+    post:
+      tags:
+        - NodeManager
+      summary: Allocate nodes to the supplied profile.
+      description: 'Performs the node allocation for the supplied profile name. (view_function: allocate_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/allocateDeallocateNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+            $ref: '#/components/responses/500Abort'
+
+  /nodes/deallocate:
+    post:
+      tags:
+        - NodeManager
+      summary: DeAllocate nodes to the supplied profile.
+      description: 'Performs the node deallocation for the supplied profile name. (view_function: deallocate_nodes)'
+      requestBody:
+        $ref: '#/components/requestBodies/allocateDeallocateNodes'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /nodes/update_cache_on_request:
+    get:
+      tags:
+        - NodeManager
+      summary: Trigger refresh of nodes cache list in nodemanager service.
+      description: 'Triggers the service into refreshing the nodes cache list in nodemanager service (view_function: update_nodes_cache_on_request)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+components:
+  schemas:
+    updatePoidsBody:
+      description: Post data of update_poids_on_nodes
+      type: object
+
+    resetNodesBody:
+      description: Post data of reset nodes
+      type: object
+      properties:
+        no_ansi:
+          type: boolean
+          example: true
+        reset_network_values:
+          type: boolean
+          example: true
+    addRemoveNodesBody:
+      description: Post data of remove nodes
+      type: object
+      properties:
+        node_range:
+          type: string
+          example: "1-2"
+        file_name:
+          type: string
+          example: "/path/to/file"
+        force:
+          type: string
+          example: "true"
+    listNodesBody:
+      description: Post data of list nodes
+      type: object
+      properties:
+        profile:
+          type: string
+          example: "TEST_00"
+        node_attributes:
+          type: string
+          example: "[node_id, profiles]"
+        match_patterns:
+          type: string
+          example: "PATTERN,PATTERN1"
+    allocateDeallocateNodesBody:
+      description: Post data of allocate nodes
+      type: object
+      properties:
+        profile:
+          type: string
+          example: "TEST_00"
+        nodes:
+          type: string
+          example: "Node,Node1"
+        profile_values:
+          type: object
+          example: {'key': {}, 'key1': 1}
+        network_config:
+          type: string
+          example: 40k
+
+  requestBodies:
+    updatePoids:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/updatePoidsBody'
+    resetNodes:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/resetNodesBody'
+    removeNodes:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/addRemoveNodesBody'
+    addNodes:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/addRemoveNodesBody'
+    listNodes:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/listNodesBody'
+    allocateDeallocateNodes:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/allocateDeallocateNodesBody'
+
+  responses:
+    successJsonObject:
+      description: Successful json response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: object
+                example: {'key': 'value'}
+    500Abort:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example:
+                  The server encountered an internal error and was unable to complete your request.
+                  Either the server is overloaded or there is an error in the application.
+    404Abort:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example:
+                  The requested resource was not found.

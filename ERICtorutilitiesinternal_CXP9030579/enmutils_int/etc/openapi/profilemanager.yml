@@ -1,0 +1,407 @@
+---
+openapi: 3.0.0
+info:
+  title: Workload Services API
+  description: Generate Workload towards ENM with the Workload Services API
+  version: 1.0.0
+  contact:
+    name: ENM/BladeRunners
+servers:
+  - url: http://localhost:5003/api/v1/
+    description: ProfileManager service
+tags:
+  - name: ProfileManager
+    description: ProfileManager Service Routes
+paths:
+  /profile/status:
+    post:
+      tags:
+        - ProfileManager
+      summary: Retrieve the profile status
+      description: 'Retrieve the profile status of profile(s). (view_function: status)'
+      requestBody:
+        $ref: '#/components/requestBodies/getStatus'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /profile/status/set:
+    post:
+      tags:
+        - ProfileManager
+      summary: Sets the profile status
+      description: 'Adds the profile status. (view_function: set_status)'
+      requestBody:
+        $ref: '#/components/requestBodies/setStatus'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /profile/exception:
+    post:
+      tags:
+        - ProfileManager
+      summary: Sets the profile exceptions
+      description: 'Adds an error or warning to the profile persisted values. (view_function: set_error_or_warning)'
+      requestBody:
+        $ref: '#/components/requestBodies/setException'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /clear/errors:
+    post:
+      tags:
+        - ProfileManager
+      summary: Clears the Profile(s) errors
+      description: 'Removes a Profile(s) error or errors from persistence. (view_function: clear_errors)'
+      requestBody:
+        $ref: '#/components/requestBodies/clearErrors'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /clear/pids:
+    post:
+      tags:
+        - ProfileManager
+      summary: Clears the Profile(s) pid files
+      description: 'Removes a Profile(s) local pid file. (view_function: clear_pids)'
+      requestBody:
+        $ref: '#/components/requestBodies/profileNames'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /profiles:
+    post:
+      tags:
+        - ProfileManager
+      summary: Displays a list of Profiles.
+      description: 'Returns the list of available Profiles. (view_function: profiles_list)'
+      responses:
+        '200':
+          $ref: '#/components/responses/informationalList'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /categories:
+    post:
+      tags:
+        - ProfileManager
+      summary: Displays a list of Profile Categories.
+      description: 'Returns the list of available categories. (view_function: categories_list)'
+      responses:
+        '200':
+          $ref: '#/components/responses/informationalList'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /describe:
+    post:
+      tags:
+        - ProfileManager
+      summary: Describe the supplied profile.
+      description: 'Returns the basic values and document text of the profile(s). (view_function: describe)'
+      requestBody:
+        $ref: '#/components/requestBodies/profileNames'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /export:
+    post:
+      tags:
+        - ProfileManager
+      summary: Exports the profile attributes.
+      description: 'Exports a dictionary of profile(s) attributes to file. (view_function: export)'
+      requestBody:
+        $ref: '#/components/requestBodies/exportProfiles'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /diff:
+    post:
+      tags:
+        - ProfileManager
+      summary: Show workload diff
+      description: 'Show workload diff. (view_function: diff)'
+      requestBody:
+        $ref: '#/components/requestBodies/diffParameters'
+      responses:
+        '200':
+          $ref: '#/components/responses/simpleSuccessJson'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+components:
+  schemas:
+    Status:
+      type: object
+      properties:
+        name:
+          type: string
+          example: CELLMGT_14
+        state:
+          type: string
+          example: RUNNING
+        status:
+          type: string
+          example: DEAD
+        started:
+          type: string
+          format: datetime
+          example: 2019-10-23 18:01:00
+        pid:
+          type: integer
+          example: 1111
+        nodes:
+          type: integer
+          example: 40
+        users:
+          type: integer
+          example: 10
+        sessions:
+          type: integer
+          example: 12
+        priority:
+          type: integer
+          example: 2
+        schedule:
+          type: string
+          example: Runs at the following times  [next 10 run times]  (last run 22-Oct 16:37:25, next run 2019-10-23 09:00:00)
+
+    CreateStatus:
+      type: object
+      properties:
+        name:
+          type: string
+          example: CELLMGT_14
+        state:
+          type: string
+          example: RUNNING
+        started:
+          type: string
+          format: datetime
+          example: 2019-10-23 18:01:00
+        pid:
+          type: integer
+          example: 1111
+        num_nodes:
+          type: integer
+          example: 40
+        user_count:
+          type: integer
+          example: 10
+        last_run:
+          type: integer
+          example: 12
+        priority:
+          type: integer
+          example: 2
+        schedule:
+          type: string
+          example: Runs at the following times  [next 10 run times]  (last run 22-Oct 16:37:25, next run 2019-10-23 09:00:00)
+
+    profileStatus:
+      description: Profile status body
+      type: object
+      required:
+        - profiles
+        - category
+      properties:
+        all:
+          type: boolean
+          example: true
+        profiles:
+          type: array
+          items:
+            type: string
+            example:
+              - CELLMGT_14
+              - CELLMGT_13
+        category:
+          type: array
+          items:
+            type: string
+            example:
+              - CELLMGT
+
+    profileException:
+      description: Profile exception body
+      type: object
+      required:
+        - profile_key
+        - profile_values
+      properties:
+        profile_key:
+          type: string
+          example: CELLMGT_13
+        profile_values:
+          type: array
+          items:
+            type: object
+            example:
+              - {'DUPLICATES': ['2020/02/02 06:00:05'], 'TIMESTAMP': '2020/02/04 12:00:05', 'REASON': "[EnvironError]"}
+
+    clearException:
+      description: Profile exception body
+      type: object
+      properties:
+        profile_names:
+          type: array
+          items:
+            type: string
+            example:
+              - CELLMGT_14
+              - CELLMGT_13
+
+    profileNamesBody:
+      description: Post data of profile names
+      type: object
+      required:
+        - profile_names
+      properties:
+        profile_names:
+          type: array
+          items:
+            type: string
+            example:
+              - CELLMGT_14
+              - CELLMGT_13
+    diffParametersBody:
+      description: Post data of diff parameters
+      type: object
+      required:
+        - diff_parameters
+      properties:
+        diff_parameters:
+          type: object
+          example:
+            - {'priority': 0, 'updated': true, 'version': '', 'list_format': false, 'profile_names': []}
+
+    exportRequest:
+      description: Export profile body
+      type: object
+      required:
+        - profiles_to_export
+        - export_file_path
+        - categories_to_export
+        - all_profiles
+        - all_categories
+      properties:
+        profiles_to_export:
+          type: object
+          example:
+            - {"CELLMGT_13": "{'NAME': 'CELLMGT_13'}"}
+        export_file_path:
+          type: string
+          example: path/to/file
+        categories_to_export:
+          type: array
+          items:
+            type: string
+            example:
+              - TEST
+        all_profiles:
+          type: boolean
+          example: true
+        all_categories:
+          type: boolean
+          example: false
+
+  requestBodies:
+    getStatus:
+      description: Profile status criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/profileStatus'
+    setStatus:
+      description: Profile status create
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CreateStatus'
+    setException:
+      description: Profile status criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/profileException'
+    clearErrors:
+      description: Clear errors criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/clearException'
+    profileNames:
+      description: Clear pid files or Describe criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/profileNamesBody'
+    exportProfiles:
+      description: Export profile attributes criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/exportRequest'
+    diffParameters:
+      description: Diff parameters
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/diffParametersBody'
+
+  responses:
+    successJson:
+      description: Successful json response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Status'
+    simpleSuccessJson:
+      description: Successful json response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: Profile status added successfully
+    500Abort:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example:
+                  The server encountered an internal error and was unable to complete your request.
+                  Either the server is overloaded or there is an error in the application.
+    informationalList:
+      description: Informational list response, may contain list of profiles or categories
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: string
+                example: CELLMGT_13,CELLMGT_14 or ap, amos

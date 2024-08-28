@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nodeInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="NodeInfo.xsd">
+
+    <name>%NodeName%</name>
+    <nodeIdentifier>18.Q1-R33A54</nodeIdentifier><!-- update! -->
+    <ipAddress>%NodeIpAddress%</ipAddress>
+    <nodeType>RadioNode</nodeType>
+    <hardwareSerialNumber>%HardwareSerialNumber%</hardwareSerialNumber>
+    <ossPrefix>SubNetwork=SELIITRBS00462</ossPrefix>
+	<timeZone>GB-Eire</timeZone>
+
+    <autoIntegration>
+        <upgradePackageName>RadioNode R34A54 release upgrade package</upgradePackageName>  
+        <installLicense>false</installLicense> 
+    </autoIntegration>
+
+	<!--security>
+		<ipSecurity>
+            <ipSecLevel>OAM</ipSecLevel>
+            <subjectAltNameType>IPV4</subjectAltNameType>
+            <subjectAltName>10.10.10.10</subjectAltName>
+        </ipSecurity>	 
+    </security-->
+	
+    <!--users>
+        <secureUser>
+            <name>rbs</name>
+            <password>rbs</password>
+        </secureUser>
+    </users-->
+
+</nodeInfo>

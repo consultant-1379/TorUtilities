@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RbsSiteInstallationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SiteInstallation.xsd">
+        <InstallationData>
+                <SmrsData
+                        address="10.42.35.206"
+                        summaryFilePath="/ai/erbs/{{ node_id }}/AutoIntegrationRbsSummaryFile.xml"
+                        userName="{{ user }}"
+                        password="{{ passwd }}"/>
+        </InstallationData>
+</RbsSiteInstallationFile>

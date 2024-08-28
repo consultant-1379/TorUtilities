@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:com:ericsson:ebase:0.1.0</capability>
+  </capabilities>
+</hello>
+]]>]]>
+<rpc message-id="Create the Basband Unit" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <config>
+      <ManagedElement>
+        <managedElementId>1</managedElementId>
+        <NodeSupport>
+          <nodeSupportId>1</nodeSupportId>
+          <MpClusterHandling>
+            <mpClusterHandlingId>1</mpClusterHandlingId>
+            <primaryCoreRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1</primaryCoreRef>
+          </MpClusterHandling>
+        </NodeSupport>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Set supportSystemControl to true" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <config>
+      <ManagedElement>
+        <managedElementId>1</managedElementId>
+        <EquipmentSupportFunction>
+          <equipmentSupportFunctionId>1</equipmentSupportFunctionId>
+          <supportSystemControl>%SE_supportSystemControl%</supportSystemControl>
+        </EquipmentSupportFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Create RiPorts for BB-1" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <config>
+      <ManagedElement>
+        <managedElementId>1</managedElementId>
+        <Equipment>
+          <equipmentId>1</equipmentId>
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>1</fieldReplaceableUnitId>
+            <RiPort>
+              <riPortId>A</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>B</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>C</riPortId>
+            </RiPort>
+			<RiPort>
+              <riPortId>D</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>E</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>F</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+        </Equipment>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+<rpc message-id="Create Radios and Sector 1" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <config>
+      <ManagedElement>
+        <managedElementId>1</managedElementId>
+        <Equipment>
+          <equipmentId>1</equipmentId>
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>SELIITRUS00012</fieldReplaceableUnitId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <RfPort>
+              <rfPortId>A</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RfPort>
+              <rfPortId>B</rfPortId>
+              <administrativeState>LOCKED</administrativeState>
+            </RfPort>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>DATA_2</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+          <FieldReplaceableUnit>
+            <fieldReplaceableUnitId>SELIITRUS00013</fieldReplaceableUnitId>
+            <administrativeState>UNLOCKED</administrativeState>
+            <RfPort>
+              <rfPortId>A</rfPortId>
+              <administrativeState>UNLOCKED</administrativeState>
+            </RfPort>
+            <RfPort>
+              <rfPortId>B</rfPortId>
+              <administrativeState>LOCKED</administrativeState>
+            </RfPort>
+            <RiPort>
+              <riPortId>DATA_1</riPortId>
+            </RiPort>
+            <RiPort>
+              <riPortId>DATA_2</riPortId>
+            </RiPort>
+          </FieldReplaceableUnit>
+          <AntennaUnitGroup>
+            <antennaUnitGroupId>1</antennaUnitGroupId>
+            <AntennaUnit>
+              <antennaUnitId>1</antennaUnitId>
+              <AntennaSubunit>
+                <antennaSubunitId>1</antennaSubunitId>
+                <AuPort>
+                  <auPortId>1</auPortId>
+                </AuPort>
+              </AntennaSubunit>
+              <AntennaSubunit>
+                <antennaSubunitId>2</antennaSubunitId>
+                <AuPort>
+                  <auPortId>1</auPortId>
+                </AuPort>
+              </AntennaSubunit>
+            </AntennaUnit>
+            <RfBranch>
+              <rfBranchId>1</rfBranchId>
+              <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=1,AuPort=1</auPortRef>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=SELIITRUS00012,RfPort=A</rfPortRef>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>2</ulAttenuation>
+              <dlTrafficDelay>40</dlTrafficDelay>
+              <ulTrafficDelay>40</ulTrafficDelay>
+            </RfBranch>
+            <RfBranch>
+              <rfBranchId>2</rfBranchId>
+              <auPortRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1,AntennaSubunit=2,AuPort=1</auPortRef>
+              <rfPortRef>ManagedElement=1,Equipment=1,FieldReplaceableUnit=SELIITRUS00012,RfPort=B</rfPortRef>
+              <dlAttenuation>1</dlAttenuation>
+              <ulAttenuation>2</ulAttenuation>
+              <dlTrafficDelay>40</dlTrafficDelay>
+              <ulTrafficDelay>40</ulTrafficDelay>
+            </RfBranch>
+          </AntennaUnitGroup>
+          <RiLink>
+            <riLinkId>1</riLinkId>
+            <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,RiPort=A</riPortRef1>
+            <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=SELIITRUS00012,RiPort=DATA_1</riPortRef2>
+          </RiLink>
+          <RiLink>
+            <riLinkId>2</riLinkId>
+            <riPortRef1>ManagedElement=1,Equipment=1,FieldReplaceableUnit=1,RiPort=B</riPortRef1>
+            <riPortRef2>ManagedElement=1,Equipment=1,FieldReplaceableUnit=SELIITRUS00013,RiPort=DATA_1</riPortRef2>
+          </RiLink>          
+        </Equipment>
+        <NodeSupport>
+          <nodeSupportId>1</nodeSupportId>
+          <SectorEquipmentFunction>
+            <sectorEquipmentFunctionId>1</sectorEquipmentFunctionId>
+            <mixedModeRadio>false</mixedModeRadio>
+            <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=1</rfBranchRef>
+            <rfBranchRef>ManagedElement=1,Equipment=1,AntennaUnitGroup=1,RfBranch=2</rfBranchRef>
+            <administrativeState>UNLOCKED</administrativeState>
+          </SectorEquipmentFunction>
+        </NodeSupport>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+<rpc message-id="Closing" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <close-session></close-session>
+</rpc>
+]]>]]>

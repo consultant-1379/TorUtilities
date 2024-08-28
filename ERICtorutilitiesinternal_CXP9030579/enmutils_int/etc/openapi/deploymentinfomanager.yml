@@ -1,0 +1,284 @@
+---
+openapi: 3.0.0
+info:
+  title: Workload Services API
+  description: Generate Workload towards ENM with the Workload Services API
+  version: 1.0.0
+  contact:
+    name: ENM/BladeRunners
+servers:
+  - url: http://localhost:5004/api/v1/
+    description: DeploymentInfoManager service
+tags:
+  - name: DeploymentInfoManager
+    description: DeploymentInfoManager Service Routes
+paths:
+  /deployment/apache:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Retrieve the ENM deployment Apache URL information.
+      description: 'Retrieve the requested ENM deployment Apache Url info if available. (view_function: get_apache_url)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /deployment/pib/read:
+    post:
+      tags:
+        - DeploymentInfoManager
+      summary: Read the value of PIB parameter on ENM
+      description: 'Read PIB Value. (view_function: read_pib)'
+      requestBody:
+        $ref: '#/components/requestBodies/readPib'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/pib/update:
+    post:
+      tags:
+        - DeploymentInfoManager
+      summary: Update the value of PIB parameter on ENM
+      description: 'Update PIB Value. (view_function: update_pib)'
+      requestBody:
+        $ref: '#/components/requestBodies/updatePib'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/info:
+    post:
+      tags:
+        - DeploymentInfoManager
+      summary: Retrieve the ENM deployment information.
+      description: 'Retrieve the requested ENM deployment info if available. (view_function: get_deployment_info)'
+      requestBody:
+        $ref: '#/components/requestBodies/getInfo'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '404':
+          $ref: '#/components/responses/404Abort'
+  /deployment/copy_emp:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Copy ENM key pair.
+      description: 'Copy the locally available enm key pair to the EMP VM. (view_function: copy_emp_key)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+  /deployment/eniq:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Check if server is ENIQ server.
+      description: 'Verify if the workloadVM is listed in ENIQ list. (view_function: get_eniq)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/poid_refresh:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Trigger refresh of POID info from ENM.
+      description: 'Triggers the service into fetching POID info from ENM (view_function: poid_refresh)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/lms/password:
+    post:
+      tags:
+        - DeploymentInfoManager
+      summary: Setup password-less access for the supplied LMS.
+      description: 'Establish password-less access for the supplied LMS. (view_function: lms_password_less_access)'
+      requestBody:
+        $ref: '#/components/requestBodies/passwordLess'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '404':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/enm/access:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Check if workload vm has password-less access to ENM
+      description: 'Checks password-less access to ENM. (view_function: enm_access)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/password/ageing:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Check if ENM Password Ageing Policy is enabled
+      description: 'Checks if ENM Password Ageing Policy is enabled. (view_function: password_ageing)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+  /deployment/config:
+    get:
+      tags:
+        - DeploymentInfoManager
+      summary: Checks and returns config of deployment
+      description: 'Checks and returns config of deployment (view_function: deployment_config)'
+      responses:
+        '200':
+          $ref: '#/components/responses/successJsonObject'
+        '500':
+          $ref: '#/components/responses/500Abort'
+
+components:
+  schemas:
+    deploymentInfo:
+      description: Object containing ENM info identifier and resulting value(s)
+      type: object
+      required:
+        - enm_value
+      properties:
+        enm_value:
+          type: string
+          example: visinamingsb
+    readPibBody:
+      description: Post data of read_pib
+      type: object
+      required:
+        - enm_service_name
+        - pib_parameter_name
+
+      properties:
+        enm_service_name:
+          type: string
+          example: cmserv
+        pib_parameter_name:
+          type: string
+          example: maxAmosSessions
+        service_identifier:
+          type: string
+          example: terminal-websocket
+
+    updatePibBody:
+      description: Post data of update_pib
+      type: object
+      required:
+        - enm_service_name
+        - pib_parameter_name
+        - pib_parameter_value
+
+      properties:
+        enm_service_name:
+          type: string
+          example: cmserv
+        pib_parameter_name:
+          type: string
+          example: maxAmosSessions
+        pib_parameter_value:
+          type: string
+          example: 150
+        service_identifier:
+          type: string
+          example: terminal-websocket
+        scope:
+          type: string
+          example: GLOBAL
+
+    setupPasswordLess:
+      description: Object which may contain LMS specific credential information to configure password-less access
+      type: object
+
+      properties:
+        username:
+          type: string
+          example: user
+        password:
+          type: string
+          example: pass
+        ms_host:
+          type: string
+          example: host
+
+  requestBodies:
+    getInfo:
+      description: Profile status criteria
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/deploymentInfo'
+    readPib:
+      description: Read PIB
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/readPibBody'
+    updatePib:
+      description: Update PIB
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/updatePibBody'
+    passwordLess:
+      description: Password Less
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/setupPasswordLess'
+
+  responses:
+    successJsonObject:
+      description: Successful json response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              message:
+                type: object
+                example: {'key': 'value'}
+    500Abort:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example:
+                  The server encountered an internal error and was unable to complete your request.
+                  Either the server is overloaded or there is an error in the application.
+    404Abort:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example:
+                  The requested resource was not found.

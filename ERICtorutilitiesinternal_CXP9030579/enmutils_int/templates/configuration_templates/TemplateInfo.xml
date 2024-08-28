@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\ejaneco\Documents\Altova Projects\TemplateInfo.xsd">
+		<nodeInfo>nodeInfo.xml</nodeInfo>
+		<siteBasic>SiteBasic_SELIITRBS00462.xml</siteBasic>
+		<siteInstallation>SiteInstallation.xml</siteInstallation>
+		<siteEquipment>SiteEquipment_SELIITRBS00462.xml</siteEquipment>
+		<configurations>
+			<nodeConfiguration>SELIITRBS00462_create_ENodeBFunction.xml</nodeConfiguration>
+			<nodeConfiguration>SELIITRBS00462_TNBulkCM.xml</nodeConfiguration>
+			<nodeConfiguration>SELIITRBS00462_RNBulkCM.xml</nodeConfiguration>
+		</configurations>
+</artifacts>

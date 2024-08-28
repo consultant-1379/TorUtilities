@@ -1,0 +1,36 @@
+BASE_URL = "/enm-nbi/cm/v1/data/"
+SINGLE_MO_ALL_CHILD_URL = BASE_URL + "{0}?scopeType=BASE_ALL"
+SINGLE_MO_WITH_ATTR_URL = BASE_URL + "{0}?attributes={1}"
+SINGLE_MO_ALL_ATTRIBUTES_URL = BASE_URL + "{0}"
+SINGLE_NODE_ALL_ATTRIBUTES_WITH_MO_TYPE_URL = SINGLE_MO_ALL_CHILD_URL + "&filter=//{1}"
+
+CRUD_02_BASE_URL = "/enm-nbi/cm/v1/data?scopeType=BASE_ALL&filter=//"
+NETWORK_WIDE_EUTRANCELLFDD_WITH_ADMINISTRATIVESTATE_LOCKED_URL = CRUD_02_BASE_URL + "EUtranCellFDD[attributes/administrativeState=LOCKED]&attributes"
+NETWORK_WIDE_EUTRANCELLTDD_WITH_ADMINISTRATIVESTATE_LOCKED_URL = CRUD_02_BASE_URL + "EUtranCellTDD[attributes/administrativeState=LOCKED]&attributes"
+NETWORK_WIDE_NRCELLDU_WITH_ADMINISTRATIVESTATE_NOT_LOCKED_URL = CRUD_02_BASE_URL + "NRCellDU[attributes/administrativeState!=LOCKED]&attributes"
+NETWORK_WIDE_ALL_CMFUNCTION_SYNCHRONIZED = CRUD_02_BASE_URL + "CmFunction[attributes/syncStatus=SYNCHRONIZED]&attributes"
+NETWORK_WIDE_ALL_MANAGEDELEMENT = CRUD_02_BASE_URL + "ManagedElement&attributes"
+NETWORK_WIDE_ALL_ENODEBFUNCTION_WITH_USERLABEL_NOT_EQUAL_TO_TEST = CRUD_02_BASE_URL + "ENodeBFunction[attributes/userLabel != test ]&attributes"
+NETWORK_WIDE_ALL_GNBDU_FUNCTION_WITH_USERLABEL_NOT_EQUAL_TO_TEST = CRUD_02_BASE_URL + "GNBDUFunction[attributes/gNBDUName != test ]&attributes=gNBDUName"
+
+DYNAMIC_CRUD_02_CMD_LIST = [[NETWORK_WIDE_EUTRANCELLFDD_WITH_ADMINISTRATIVESTATE_LOCKED_URL, 1],
+                            [NETWORK_WIDE_EUTRANCELLTDD_WITH_ADMINISTRATIVESTATE_LOCKED_URL, 1],
+                            [NETWORK_WIDE_NRCELLDU_WITH_ADMINISTRATIVESTATE_NOT_LOCKED_URL, 1],
+                            [NETWORK_WIDE_ALL_CMFUNCTION_SYNCHRONIZED, 2],
+                            [NETWORK_WIDE_ALL_MANAGEDELEMENT, 2],
+                            [NETWORK_WIDE_ALL_ENODEBFUNCTION_WITH_USERLABEL_NOT_EQUAL_TO_TEST, 2],
+                            [NETWORK_WIDE_ALL_GNBDU_FUNCTION_WITH_USERLABEL_NOT_EQUAL_TO_TEST, 2]]
+
+DYNAMIC_CRUD_03_POST_PAYLOAD = {
+    "EUtranFrequency": [
+        {"id": None, "attributes": {"userLabel": None, "arfcnValueEUtranDl": None}}
+    ]
+}
+
+DYNAMIC_CRUD_03_PUT_PAYLOAD = {
+    "EUtranFrequency": {
+        "attributes": {
+            "userLabel": None
+        }
+    }
+}

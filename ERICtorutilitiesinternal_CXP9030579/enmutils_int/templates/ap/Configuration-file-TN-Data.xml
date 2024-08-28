@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bulkCmConfigDataFile xmlns:es="EricssonSpecificAttributes.16.21.xsd" xmlns:un="utranNrm.xsd" 
+     xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns="configData.xsd">
+
+</bulkCmConfigDataFile>

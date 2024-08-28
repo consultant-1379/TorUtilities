@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bulkCmConfigDataFile xmlns:es="EricssonSpecificAttributes.16.08.xsd" xmlns:un="utranNrm.xsd" xmlns:xn="genericNrm.xsd" xmlns:gn="geranNrm.xsd" xmlns="configData.xsd">
+
+    <fileHeader fileFormatVersion="32.615 V4.5" vendor="Ericsson" />
+
+    <configData dnPrefix="">
+
+        <xn:ManagedElement id="MSRBS_V1Node1">
+            <xn:VsDataContainer id="1" mimName="Lrat">
+                <xn:attributes>
+                    <xn:vsDataType>vsDataENodeBFunction</xn:vsDataType>
+                    <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.08</xn:vsDataFormatVersion>
+                    <es:vsDataENodeBFunction />
+                </xn:attributes>
+
+                <xn:VsDataContainer id="AP_CELL" modifier="create">
+                    <xn:attributes>
+                        <xn:vsDataType>vsDataEUtranCellFDD</xn:vsDataType>
+                        <xn:vsDataFormatVersion>EricssonSpecificAttributes.16.08</xn:vsDataFormatVersion>
+                        <es:vsDataEUtranCellFDD>
+                            <es:earfcndl>300</es:earfcndl>
+                            <es:earfcnul>18300</es:earfcnul>
+                            <es:cellId>1</es:cellId>
+                            <es:physicalLayerCellIdGroup>1</es:physicalLayerCellIdGroup>
+                            <es:physicalLayerSubCellId>0</es:physicalLayerSubCellId>
+                            <es:dlChannelBandwidth>10000</es:dlChannelBandwidth>
+                            <es:ulChannelBandwidth>10000</es:ulChannelBandwidth>
+                        </es:vsDataEUtranCellFDD>
+                    </xn:attributes>
+                </xn:VsDataContainer>
+            </xn:VsDataContainer>
+        </xn:ManagedElement>
+    </configData>
+
+    <fileFooter dateTime="2016-04-04T13:53:29Z" />
+
+</bulkCmConfigDataFile>
+

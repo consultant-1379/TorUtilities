@@ -1,0 +1,53 @@
+{
+    "1425446408180": {
+        "Comment": "",
+        "Completed": "1970-01-01 01:00:00",
+        "Count": "100",
+        "ExecutionState": "END",
+        "Hidden parameters": {},
+        "Is suspended": "false",
+        "Name": "Create CV",
+        "OldState": "UNKNOWN",
+        "Operator": "suser1",
+        "Parameters": {
+            "SCHEDULE_MODE": "PARALLEL"
+        },
+        "ResultState": "OK",
+        "Started": "2015-03-04 06:33:55",
+        "Swp name": "SYSTEM_CELLO",
+        "ne configuration": [
+            {
+                "Hidden parameters": {
+                    "CV_COMMENT": ""
+                },
+                "Network element": "RNC05",
+                "Parameters": {
+                    "CV_COMMENT": ""
+                }
+            }
+        ],
+        "phase configuration": [
+            {
+                "Activity id": "1425446408181",
+                "Default mode": "IMMEDIATE",
+                "Hidden parameters": {
+                    "CV_COMMENT": ""
+                },
+                "Interaction flag": "false",
+                "Order number": "0",
+                "Parameters": {
+                    "CV_COMMENT": "",
+                    "CV_ID": "",
+                    "CV_NAME": "",
+                    "CV_TYPE": "5",
+                    "CV_USE_DEFAULT_NAME": "true",
+                    "CV_USE_TIME_STAMP": "false"
+                },
+                "Phase name": "CREATE_CV",
+                "Schedulable": "true",
+                "Scheduled": "0",
+                "Type of phase": "CREATE_CV"
+            }
+        ]
+    }
+}

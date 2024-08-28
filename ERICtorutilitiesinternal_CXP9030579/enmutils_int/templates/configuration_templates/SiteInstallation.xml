@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RbsSiteInstallationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SiteInstallation.xsd">
+    <Format revision="K"/>
+    <InstallationData logicalName="SELIITRBS00462" rbsIntegrationCode="" tnPort="TN_C" vlanId="%SI_vlanId%">
+        <OamIpConfigurationData defaultRouter0="10.90.0.1" ipAddress="10.90.0.36" subnetMask="255.255.225.0">
+            <DnsServer ipAddress="10.74.38.134"/>
+        </OamIpConfigurationData>
+        <SmrsData address="2001:1b70:828a::1" summaryFilePath="/ai/ecim/SELIITRBS00462/AutoIntegrationRbsSummaryFile.xml"/>
+    </InstallationData>
+</RbsSiteInstallationFile>
